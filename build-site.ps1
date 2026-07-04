@@ -198,7 +198,7 @@ $data = [ordered]@{
 }
 
 $json = $data | ConvertTo-Json -Depth 8
-Set-Content -LiteralPath (Join-Path $dataPath "index.json") -Value $json -Encoding UTF8
+[IO.File]::WriteAllText((Join-Path $dataPath "index.json"), $json, [Text.UTF8Encoding]::new($false))
 
 Write-Host "Built research site:"
 Write-Host "  Notes:  $($notes.Count)"
