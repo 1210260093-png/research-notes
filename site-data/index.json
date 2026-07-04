@@ -1,42 +1,7 @@
 ﻿{
-    "generatedAt":  "2026-07-04T12:34:56.6466892+08:00",
+    "generatedAt":  "2026-07-04T17:40:20.0018029+08:00",
     "sourceVault":  "C:\\Users\\aaazl\\OneDrive\\ObsidianVaults\\research",
     "notes":  [
-                  {
-                      "id":  "reference/一个由 codegree 控制 regularity 的准随机判据",
-                      "title":  "一个由 codegree 控制 regularity 的准随机判据",
-                      "path":  "reference/一个由 codegree 控制 regularity 的准随机判据.md",
-                      "url":  "content/reference/一个由 codegree 控制 regularity 的准随机判据.md",
-                      "folder":  "reference",
-                      "tags":  [
-
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "[!Lemma] 对任意 varepsilon,d 0 0 ，存在 xi 0 ，使得若二部图 G 的两侧为 X,Y ，密度 d ge d 0 ，并且满足 那么 (X,Y) 是 varepsilon regular 的。 这个Lemma 是一个二部图版本的 quasirandomness 判据：如果二部图 (X,Y) 的边密度 d 不太小，并且 X 侧任意两点",
-                      "updatedAt":  "2026-06-15T15:49:15.0000000+08:00"
-                  },
-                  {
-                      "id":  "reference/染色多项式（chromatic polynomial）",
-                      "title":  "染色多项式（chromatic polynomial）",
-                      "path":  "reference/染色多项式（chromatic polynomial）.md",
-                      "url":  "content/reference/染色多项式（chromatic polynomial）.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "chromatic_polynomial",
-                                   "graph_colouring",
-                                   "graph_polynomial",
-                                   "染色多项式",
-                                   "色多项式"
-                               ],
-                      "outlinks":  [
-                                       "Fadnavis chromatic polynomial asymptotic",
-                                       "Lovász Local Lemma (LLL)"
-                                   ],
-                      "excerpt":  "定义 设 G 是一个有限简单图。对正整数 q ，记 为 G 的 proper q colourings 的数量，也就是给每个顶点赋予 q 种颜色之一，并要求每条边的两个端点颜色不同的染色数。 一个基本事实是： P G(q) 实际上是关于 q 的一个多项式，称为 G 的 染色多项式 或 chromatic polynomial 。 基本性质 若 G 有 v 个",
-                      "updatedAt":  "2026-07-04T10:50:47.5681637+08:00"
-                  },
                   {
                       "id":  "reference/Sorting network",
                       "title":  "Sorting network",
@@ -72,219 +37,6 @@
                                    ],
                       "excerpt":  "[!tip] Definition 一个图 G 称为 (n,d, lambda) graph ，如果： V(G) =n ； G 是 d 正则图； 除了平凡特征值 d 之外，邻接矩阵的其余特征值的绝对值都至多为 lambda 。 直观理解 我们通常把 {d}/{ lambda} 看作图的“谱拟随机性”或“谱扩张性”强弱指标。这个比值越大，图越像随机图，也越容易",
                       "updatedAt":  "2026-06-16T13:56:29.0000000+08:00"
-                  },
-                  {
-                      "id":  "reference/正则化",
-                      "title":  "正则化",
-                      "path":  "reference/正则化.md",
-                      "url":  "content/reference/正则化.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "0",
-                                   "1",
-                                   "10",
-                                   "2",
-                                   "3",
-                                   "4",
-                                   "5",
-                                   "6",
-                                   "7",
-                                   "8",
-                                   "9",
-                                   "counting",
-                                   "extremal-graph-theory",
-                                   "reference",
-                                   "regularization"
-                               ],
-                      "outlinks":  [
-                                       "Graph robustness concepts",
-                                       "Janson inequality",
-                                       "Rainbow Turan Problems for Cycles",
-                                       "Sidorenko"
-                                   ],
-                      "excerpt":  "正则化 [!summary] 一句话版本 这里的“正则化”不是 Szemerédi regularity lemma，而是 Turán 型问题中常用的 找好子图 技术：从一个很稠但度数分布可能很不均匀的图中，抽取一个仍然足够稠、但度数更可控的子图。这样一方面可以做路径、星、偶圈等计数，另一方面在子图中找到的固定结构仍然属于原图。 目录 0. 技术定位 0. ",
-                      "updatedAt":  "2026-06-24T15:28:38.0000000+08:00"
-                  },
-                  {
-                      "id":  "reference/吸收方法/Absorbing method",
-                      "title":  "Absorbing method",
-                      "path":  "reference/吸收方法/Absorbing method.md",
-                      "url":  "content/reference/吸收方法/Absorbing method.md",
-                      "folder":  "reference/吸收方法",
-                      "tags":  [
-                                   "absorbing_method",
-                                   "embedding_universality",
-                                   "extremal_ramsey_turan",
-                                   "graph_theory",
-                                   "hamiltonicity"
-                               ],
-                      "outlinks":  [
-                                       "Absorbing method based on lattice",
-                                       "Chernoff Bound",
-                                       "Distributive absorption method",
-                                       "Extendable method",
-                                       "Lovász Local Lemma (LLL)",
-                                       "Posa rotation",
-                                       "Reserved connector theorem"
-                                   ],
-                      "excerpt":  "基本思想 典型证明思路往往是下面三步： Step 1. 构造一个很小的 absorbing set 先找到一个小集合 A subseteq V(G) ，满足： A 很小； 对任意足够小的“合适”顶点集 R subseteq V(G) setminus A ，子图 G[A cup R] 中仍然存在同类型目标结构。 这时称 A 可以吸收 R 。 Step 2. ",
-                      "updatedAt":  "2026-06-12T21:35:27.0846040+08:00"
-                  },
-                  {
-                      "id":  "reference/吸收方法/Distributive absorption method",
-                      "title":  "Distributive absorption method",
-                      "path":  "reference/吸收方法/Distributive absorption method.md",
-                      "url":  "content/reference/吸收方法/Distributive absorption method.md",
-                      "folder":  "reference/吸收方法",
-                      "tags":  [
-                                   "absorbing_method",
-                                   "hamiltonicity",
-                                   "matchings_tilings_factors",
-                                   "probabilistic_method",
-                                   "spanning_trees"
-                               ],
-                      "outlinks":  [
-                                       "Absorbing method",
-                                       "Absorbing method based on lattice"
-                                   ],
-                      "excerpt":  "这是什么 分布式吸收法是 Absorbing method 的一个变体。另见 Absorbing method based on lattice （处理多维整除约束的格基版本）。 吸收法的大致想法是： 先提前准备一小块“特殊结构”，等到最后还剩下一点难处理的顶点或小结构时，再用这块特殊结构把它们“吸收”进去，从而完成整个构造。 所谓 分布式 ，意思是： 它不",
-                      "updatedAt":  "2026-06-12T16:26:37.2577496+08:00"
-                  },
-                  {
-                      "id":  "reference/点传递图（vertex-transitive graph）",
-                      "title":  "点传递图（vertex-transitive graph）",
-                      "path":  "reference/点传递图（vertex-transitive graph）.md",
-                      "url":  "content/reference/点传递图（vertex-transitive graph）.md",
-                      "folder":  "reference",
-                      "tags":  [
-
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "定义 一个图 G 称为 点传递图 ，如果对任意两个顶点 u,v in V(G) ，都存在一个图自同构 使得 等价地说，图的自同构群 operatorname{Aut}(G) 在顶点集 V(G) 上是传递作用的。 直观理解 点传递图的意思是：从图自身的对称性来看，所有顶点没有区别。 也就是说，图里没有哪个顶点是特殊的。任意一个顶点都可以通过某个保持邻接关系的对",
-                      "updatedAt":  "2026-06-24T15:49:16.0000000+08:00"
-                  },
-                  {
-                      "id":  "reference/吸收方法/Absorbing method based on lattice",
-                      "title":  "Absorbing method based on lattice",
-                      "path":  "reference/吸收方法/Absorbing method based on lattice.md",
-                      "url":  "content/reference/吸收方法/Absorbing method based on lattice.md",
-                      "folder":  "reference/吸收方法",
-                      "tags":  [
-                                   "absorbing_method",
-                                   "hamiltonicity",
-                                   "matchings_tilings_factors",
-                                   "probabilistic_method",
-                                   "spanning_trees"
-                               ],
-                      "outlinks":  [
-                                       "Absorbing method",
-                                       "Distributive absorption method"
-                                   ],
-                      "excerpt":  "这是 Absorbing method 的一个进阶变体，与 Distributive absorption method 共同构成吸收方法的三大分支。 为什么需要更精细的吸收（动机） 在很多问题中，困难不只是： 剩下的顶点少 而是： 剩下的顶点在不同部分中的分布必须满足整除条件 例如： perfect matching：总数必须是偶数 (H ) tiling",
-                      "updatedAt":  "2026-06-12T16:26:37.2387213+08:00"
-                  },
-                  {
-                      "id":  "reference/Random robustness",
-                      "title":  "Random robustness",
-                      "path":  "reference/Random robustness.md",
-                      "url":  "content/reference/Random robustness.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "graph_theory",
-                                   "probabilistic_method",
-                                   "resilience_perturbation"
-                               ],
-                      "outlinks":  [
-                                       "Chen et al",
-                                       "Hitting time for hamiltonian in expander",
-                                       "Local resilience",
-                                       "Randomly perturbed graph",
-                                       "Robust Hamiltonicity",
-                                       "Robust Ramsey property"
-                                   ],
-                      "excerpt":  "Random robustness 指图性质在随机操作下的稳定性。和 adversarial resilience 不同，这里的扰动通常是随机删边、随机加边或随机稀疏化。 Main Forms 形式 问题 random sparsification 从 G 中随机保留边，性质是否仍存在？ random perturbation 给 deterministic",
-                      "updatedAt":  "2026-06-12T16:26:37.2981182+08:00"
-                  },
-                  {
-                      "id":  "reference/Randomly perturbed graph",
-                      "title":  "Randomly perturbed graph",
-                      "path":  "reference/Randomly perturbed graph.md",
-                      "url":  "content/reference/Randomly perturbed graph.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "graph_theory",
-                                   "probabilistic_method",
-                                   "resilience_perturbation"
-                               ],
-                      "outlinks":  [
-                                       "Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs",
-                                       "HG in a graph perturb a regular graph",
-                                       "Local resilience",
-                                       "Robust Hamiltonicity",
-                                       "Robust Ramsey property"
-                                   ],
-                      "excerpt":  "Randomly perturbed graph 模型研究： 一个 deterministic host graph 加上一小部分随机边后，是否获得某个全局性质？ 典型形式是 其中 G alpha 是一个 n 点 deterministic graph，常满足 而 G(n,p) 提供随机扰动。 Intuition deterministic host gra",
-                      "updatedAt":  "2026-06-15T15:17:48.0000000+08:00"
-                  },
-                  {
-                      "id":  "reference/Parity-switcher",
-                      "title":  "Parity-switcher",
-                      "path":  "reference/Parity-switcher.md",
-                      "url":  "content/reference/Parity-switcher.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "hamiltonicity",
-                                   "parity_switcher"
-                               ],
-                      "outlinks":  [
-                                       "Absorbing method",
-                                       "Disjoint paths 工具",
-                                       "Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs",
-                                       "Posa rotation"
-                                   ],
-                      "excerpt":  "[!danger] Definition (Parity switcher) 给定一个图 G 和一个子图 R subseteq G 。若子图 W subseteq G 由下述部分组成，则称 W 是一个 R parity switcher ： 一个偶环 且这个环在 R 中包含奇数条边； 对每个 2 le i le k ，都有一条连接 v i 与 v {2k i",
-                      "updatedAt":  "2026-06-16T13:50:05.0000000+08:00"
-                  },
-                  {
-                      "id":  "reference/Posa rotation",
-                      "title":  "Posa rotation",
-                      "path":  "reference/Posa rotation.md",
-                      "url":  "content/reference/Posa rotation.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "embedding_universality",
-                                   "hamiltonicity",
-                                   "posa_rotation"
-                               ],
-                      "outlinks":  [
-                                       "C-expander",
-                                       "Chernoff Bound",
-                                       "DFS algorithm"
-                                   ],
-                      "excerpt":  "定义 Pósa rotation 是 Hamilton 路径 / 长路问题中的一个基本操作。 设 是图 G 中的一条路径，并把 v 1 固定为一个端点。若对某个 i\u003ct 1 ，边 v t v i 存在，那么可以把路径末端这段“翻转”，得到新路径 这条新路径与原路径使用同样的顶点集，只是端点发生了变化。这个操作就称为一次 Pósa rotation 。 直观理",
-                      "updatedAt":  "2026-06-12T21:33:33.6577465+08:00"
-                  },
-                  {
-                      "id":  "reference/Reserved connector theorem",
-                      "title":  "Reserved connector theorem",
-                      "path":  "reference/Reserved connector theorem.md",
-                      "url":  "content/reference/Reserved connector theorem.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "embedding_universality",
-                                   "pseudorandom_graphs",
-                                   "reserved_connector",
-                                   "sorting_network"
-                               ],
-                      "outlinks":  [
-                                       "(D,m)-extendable",
-                                       "Extendable method",
-                                       "Sorting network"
-                                   ],
-                      "excerpt":  "[!theorem] Reserved Connector Theorem 存在绝对常数 C {2.3} ，使得下述结论成立。 设 1/n ll 1/K ll 1/C {2.3} ，并设 D,m in mathbb N 满足 m le n/100D 且 D ge 100 。 设 G 是一个有 n 个顶点的 m joined 图，并且包含两个互不相交的子集 V",
-                      "updatedAt":  "2026-06-16T16:19:41.0000000+08:00"
                   },
                   {
                       "id":  "reference/Roll-back",
@@ -324,6 +76,166 @@
                                    ],
                       "excerpt":  "定义 设 H 是一个图。 H 的 size Ramsey number ，记作 hat r(H) ，定义为满足下述性质的最小边数： 存在一个图 G ，使得 e(G)=m ，并且无论把 G 的每条边染成红色或蓝色中的哪一种颜色， G 中都一定包含一个单色的 H 。也就是说， 这里记号 表示：对图 G 的边做任意红蓝 2 染色后， G 中总能找到一个单色的 H ",
                       "updatedAt":  "2026-06-12T16:26:37.3158940+08:00"
+                  },
+                  {
+                      "id":  "reference/正则化",
+                      "title":  "正则化",
+                      "path":  "reference/正则化.md",
+                      "url":  "content/reference/正则化.md",
+                      "folder":  "reference",
+                      "tags":  [
+                                   "0",
+                                   "1",
+                                   "10",
+                                   "2",
+                                   "3",
+                                   "4",
+                                   "5",
+                                   "6",
+                                   "7",
+                                   "8",
+                                   "9",
+                                   "counting",
+                                   "extremal-graph-theory",
+                                   "reference",
+                                   "regularization"
+                               ],
+                      "outlinks":  [
+                                       "Graph robustness concepts",
+                                       "Janson inequality",
+                                       "Rainbow Turan Problems for Cycles",
+                                       "Sidorenko"
+                                   ],
+                      "excerpt":  "正则化 [!summary] 一句话版本 这里的“正则化”不是 Szemerédi regularity lemma，而是 Turán 型问题中常用的 找好子图 技术：从一个很稠但度数分布可能很不均匀的图中，抽取一个仍然足够稠、但度数更可控的子图。这样一方面可以做路径、星、偶圈等计数，另一方面在子图中找到的固定结构仍然属于原图。 目录 0. 技术定位 0. ",
+                      "updatedAt":  "2026-06-24T15:28:38.0000000+08:00"
+                  },
+                  {
+                      "id":  "reference/点传递图（vertex-transitive graph）",
+                      "title":  "点传递图（vertex-transitive graph）",
+                      "path":  "reference/点传递图（vertex-transitive graph）.md",
+                      "url":  "content/reference/点传递图（vertex-transitive graph）.md",
+                      "folder":  "reference",
+                      "tags":  [
+
+                               ],
+                      "outlinks":  [
+
+                                   ],
+                      "excerpt":  "定义 一个图 G 称为 点传递图 ，如果对任意两个顶点 u,v in V(G) ，都存在一个图自同构 使得 等价地说，图的自同构群 operatorname{Aut}(G) 在顶点集 V(G) 上是传递作用的。 直观理解 点传递图的意思是：从图自身的对称性来看，所有顶点没有区别。 也就是说，图里没有哪个顶点是特殊的。任意一个顶点都可以通过某个保持邻接关系的对",
+                      "updatedAt":  "2026-06-24T15:49:16.0000000+08:00"
+                  },
+                  {
+                      "id":  "reference/一个由 codegree 控制 regularity 的准随机判据",
+                      "title":  "一个由 codegree 控制 regularity 的准随机判据",
+                      "path":  "reference/一个由 codegree 控制 regularity 的准随机判据.md",
+                      "url":  "content/reference/一个由 codegree 控制 regularity 的准随机判据.md",
+                      "folder":  "reference",
+                      "tags":  [
+
+                               ],
+                      "outlinks":  [
+
+                                   ],
+                      "excerpt":  "[!Lemma] 对任意 varepsilon,d 0 0 ，存在 xi 0 ，使得若二部图 G 的两侧为 X,Y ，密度 d ge d 0 ，并且满足 那么 (X,Y) 是 varepsilon regular 的。 这个Lemma 是一个二部图版本的 quasirandomness 判据：如果二部图 (X,Y) 的边密度 d 不太小，并且 X 侧任意两点",
+                      "updatedAt":  "2026-06-15T15:49:15.0000000+08:00"
+                  },
+                  {
+                      "id":  "reference/染色多项式（chromatic polynomial）",
+                      "title":  "染色多项式（chromatic polynomial）",
+                      "path":  "reference/染色多项式（chromatic polynomial）.md",
+                      "url":  "content/reference/染色多项式（chromatic polynomial）.md",
+                      "folder":  "reference",
+                      "tags":  [
+                                   "chromatic_polynomial",
+                                   "graph_colouring",
+                                   "graph_polynomial",
+                                   "染色多项式",
+                                   "色多项式"
+                               ],
+                      "outlinks":  [
+                                       "Fadnavis chromatic polynomial asymptotic",
+                                       "Lovász Local Lemma (LLL)"
+                                   ],
+                      "excerpt":  "定义 设 G 是一个有限简单图。对正整数 q ，记 为 G 的 proper q colourings 的数量，也就是给每个顶点赋予 q 种颜色之一，并要求每条边的两个端点颜色不同的染色数。 一个基本事实是： P G(q) 实际上是关于 q 的一个多项式，称为 G 的 染色多项式 或 chromatic polynomial 。 基本性质 若 G 有 v 个",
+                      "updatedAt":  "2026-07-04T10:50:47.5681637+08:00"
+                  },
+                  {
+                      "id":  "reference/Posa rotation",
+                      "title":  "Posa rotation",
+                      "path":  "reference/Posa rotation.md",
+                      "url":  "content/reference/Posa rotation.md",
+                      "folder":  "reference",
+                      "tags":  [
+                                   "embedding_universality",
+                                   "hamiltonicity",
+                                   "posa_rotation"
+                               ],
+                      "outlinks":  [
+                                       "C-expander",
+                                       "Chernoff Bound",
+                                       "DFS algorithm"
+                                   ],
+                      "excerpt":  "定义 Pósa rotation 是 Hamilton 路径 / 长路问题中的一个基本操作。 设 是图 G 中的一条路径，并把 v 1 固定为一个端点。若对某个 i\u003ct 1 ，边 v t v i 存在，那么可以把路径末端这段“翻转”，得到新路径 这条新路径与原路径使用同样的顶点集，只是端点发生了变化。这个操作就称为一次 Pósa rotation 。 直观理",
+                      "updatedAt":  "2026-06-12T21:33:33.6577465+08:00"
+                  },
+                  {
+                      "id":  "reference/Random robustness",
+                      "title":  "Random robustness",
+                      "path":  "reference/Random robustness.md",
+                      "url":  "content/reference/Random robustness.md",
+                      "folder":  "reference",
+                      "tags":  [
+                                   "graph_theory",
+                                   "probabilistic_method",
+                                   "resilience_perturbation"
+                               ],
+                      "outlinks":  [
+                                       "Chen et al",
+                                       "Hitting time for hamiltonian in expander",
+                                       "Local resilience",
+                                       "Randomly perturbed graph",
+                                       "Robust Hamiltonicity",
+                                       "Robust Ramsey property"
+                                   ],
+                      "excerpt":  "Random robustness 指图性质在随机操作下的稳定性。和 adversarial resilience 不同，这里的扰动通常是随机删边、随机加边或随机稀疏化。 Main Forms 形式 问题 random sparsification 从 G 中随机保留边，性质是否仍存在？ random perturbation 给 deterministic",
+                      "updatedAt":  "2026-06-12T16:26:37.2981182+08:00"
+                  },
+                  {
+                      "id":  "reference/Lovász Local Lemma (LLL)",
+                      "title":  "Lovász Local Lemma (LLL)",
+                      "path":  "reference/Lovász Local Lemma (LLL).md",
+                      "url":  "content/reference/Lovász Local Lemma (LLL).md",
+                      "folder":  "reference",
+                      "tags":  [
+                                   "LLL",
+                                   "probabilistic_method"
+                               ],
+                      "outlinks":  [
+                                       "A Partition Lemma",
+                                       "Chernoff Bound",
+                                       "Janson inequality"
+                                   ],
+                      "excerpt":  "直观理解 把 A 1, dots,A n 看成坏事件。局部引理说明：即使这些坏事件不是完全独立的，只要每个坏事件发生的概率都很小，并且每个坏事件只依赖于少数其他坏事件，那么仍然有可能同时避开所有坏事件。 它通常在并合界失效时使用：虽然 sum i Pr(A i) 可能不小，但由于依赖关系是局部的，仍可推出“所有坏事件都不发生”的概率为正。 对称型表述 设 A",
+                      "updatedAt":  "2026-06-12T16:26:37.2876779+08:00"
+                  },
+                  {
+                      "id":  "reference/Parity-switcher",
+                      "title":  "Parity-switcher",
+                      "path":  "reference/Parity-switcher.md",
+                      "url":  "content/reference/Parity-switcher.md",
+                      "folder":  "reference",
+                      "tags":  [
+                                   "hamiltonicity",
+                                   "parity_switcher"
+                               ],
+                      "outlinks":  [
+                                       "Absorbing method",
+                                       "Disjoint paths 工具",
+                                       "Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs",
+                                       "Posa rotation"
+                                   ],
+                      "excerpt":  "[!danger] Definition (Parity switcher) 给定一个图 G 和一个子图 R subseteq G 。若子图 W subseteq G 由下述部分组成，则称 W 是一个 R parity switcher ： 一个偶环 且这个环在 R 中包含奇数条边； 对每个 2 le i le k ，都有一条连接 v i 与 v {2k i",
+                      "updatedAt":  "2026-06-16T13:50:05.0000000+08:00"
                   },
                   {
                       "id":  "reference/Robust expander",
@@ -369,52 +281,215 @@
                       "updatedAt":  "2026-06-12T16:26:37.3092680+08:00"
                   },
                   {
-                      "id":  "reference/概率不等式/Chernoff Bound",
-                      "title":  "Chernoff Bound",
-                      "path":  "reference/概率不等式/Chernoff Bound.md",
-                      "url":  "content/reference/概率不等式/Chernoff Bound.md",
-                      "folder":  "reference/概率不等式",
+                      "id":  "reference/Randomly perturbed graph",
+                      "title":  "Randomly perturbed graph",
+                      "path":  "reference/Randomly perturbed graph.md",
+                      "url":  "content/reference/Randomly perturbed graph.md",
+                      "folder":  "reference",
                       "tags":  [
-                                   "probabilistic_method"
+                                   "graph_theory",
+                                   "probabilistic_method",
+                                   "resilience_perturbation"
                                ],
                       "outlinks":  [
-                                       "Hypergeometric tail bound",
-                                       "Janson inequality",
-                                       "Lovász Local Lemma (LLL)"
+                                       "Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs",
+                                       "HG in a graph perturb a regular graph",
+                                       "Local resilience",
+                                       "Robust Hamiltonicity",
+                                       "Robust Ramsey property"
                                    ],
-                      "excerpt":  "Theorem. 设 X= sum {i=1}^n X i ，其中 X 1, dots,X n 相互独立，且每个 X i in {0,1 } 。记 mu= mathbb E[X] 。则对任意 0\u003c delta\u003c1 ，有 这就是说，独立伯努利变量之和会高度集中在它的期望附近。 粗略记忆版 很多证明里其实只记下面这句话就够了： 若 X 是独立 0 1 变量之和，",
-                      "updatedAt":  "2026-06-12T16:26:37.2494019+08:00"
+                      "excerpt":  "Randomly perturbed graph 模型研究： 一个 deterministic host graph 加上一小部分随机边后，是否获得某个全局性质？ 典型形式是 其中 G alpha 是一个 n 点 deterministic graph，常满足 而 G(n,p) 提供随机扰动。 Intuition deterministic host gra",
+                      "updatedAt":  "2026-06-15T15:17:48.0000000+08:00"
                   },
                   {
-                      "id":  "模板/NOTE-MANAGEMENT",
-                      "title":  "笔记管理指南",
-                      "path":  "模板/NOTE-MANAGEMENT.md",
-                      "url":  "content/模板/NOTE-MANAGEMENT.md",
-                      "folder":  "模板",
+                      "id":  "reference/Reserved connector theorem",
+                      "title":  "Reserved connector theorem",
+                      "path":  "reference/Reserved connector theorem.md",
+                      "url":  "content/reference/Reserved connector theorem.md",
+                      "folder":  "reference",
                       "tags":  [
-
+                                   "embedding_universality",
+                                   "pseudorandom_graphs",
+                                   "reserved_connector",
+                                   "sorting_network"
                                ],
                       "outlinks":  [
-
+                                       "(D,m)-extendable",
+                                       "Extendable method",
+                                       "Sorting network"
                                    ],
-                      "excerpt":  "笔记管理指南 核心原则 笔记是为未来的你服务的，不是为现在的 Claude 服务的。 宁可少写，写了的就要能信。 1. 笔记信任等级（替代\"未检查\"） 未检查 标签太模糊了——50 篇论文里 30 篇都标了 未检查 ，你就不知道该先看哪篇。换成三个等级： 标签 含义 谁写的 ai draft Claude 生成的初稿， 内容未验证 。定理可能写错，证明可能胡",
-                      "updatedAt":  "2026-06-12T16:26:37.3259314+08:00"
+                      "excerpt":  "[!theorem] Reserved Connector Theorem 存在绝对常数 C {2.3} ，使得下述结论成立。 设 1/n ll 1/K ll 1/C {2.3} ，并设 D,m in mathbb N 满足 m le n/100D 且 D ge 100 。 设 G 是一个有 n 个顶点的 m joined 图，并且包含两个互不相交的子集 V",
+                      "updatedAt":  "2026-06-16T16:19:41.0000000+08:00"
                   },
                   {
-                      "id":  "模板/模板-定理工具方法",
-                      "title":  "{{工具定理名称}}",
-                      "path":  "模板/模板-定理工具方法.md",
-                      "url":  "content/模板/模板-定理工具方法.md",
-                      "folder":  "模板",
+                      "id":  "手写 notes/Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders",
+                      "title":  "Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders",
+                      "path":  "手写 notes/Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders.md",
+                      "url":  "content/手写 notes/Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders.md",
+                      "folder":  "手写 notes",
                       "tags":  [
-
+                                   "C-expander",
+                                   "embedding",
+                                   "expanders",
+                                   "extendability",
+                                   "Hamilton",
+                                   "posa_rotation",
+                                   "pseudorandom_graphs",
+                                   "sorting_network",
+                                   "spectral_graph_theory"
                                ],
                       "outlinks":  [
-                                       "工具 A",
-                                       "工具 B"
+                                       "Draganic-etal-2024-Hamiltonicity-of-expanders-optimal-bounds-and-applications",
+                                       "Posa rotation",
+                                       "Spectral expander"
                                    ],
-                      "excerpt":  "{{工具定理名称}} 1. 使用场景 什么时候想到用它 ：当遇到……类型的问题时。 这个工具主要用于处理： 典型输入 ： 对象： 条件： 想得到的结论： [!summary] 一句话理解 这个定理的作用是：把……条件转化为……结构。 2. 定理表述 [!theorem] Theorem 设……满足……，则…… 参数说明 ： 参数 含义 典型取值 n d va",
-                      "updatedAt":  "2026-06-12T16:26:37.3289276+08:00"
+                      "excerpt":  "Main Result Theorem. 对每个充分大的常数 C 0 ，每个 C expander 都是 Hamiltonian 的。 Corollary. 存在一个常数 C 0 ，使得如果 则每个 (n,d, lambda) 图都是 Hamiltonian 的。 这是因为 在 Spectral expander 中，对每个 C 0 ，都存在一个常数 C 0",
+                      "updatedAt":  "2026-06-16T15:54:36.0000000+08:00"
+                  },
+                  {
+                      "id":  "手写 notes/Friedman–Pippenger (1987) — expanders contain small bounded-degree trees",
+                      "title":  "Friedman–Pippenger (1987) — expanders contain small bounded-degree trees",
+                      "path":  "手写 notes/Friedman–Pippenger (1987) — expanders contain small bounded-degree trees.md",
+                      "url":  "content/手写 notes/Friedman–Pippenger (1987) — expanders contain small bounded-degree trees.md",
+                      "folder":  "手写 notes",
+                      "tags":  [
+                                   "bounded_degree_trees",
+                                   "embedding",
+                                   "expanders",
+                                   "rooted_trees"
+                               ],
+                      "outlinks":  [
+                                       "Friedman-Pippenger-1987-expanding-graphs-contain-small-trees"
+                                   ],
+                      "excerpt":  "Theorem. Let T be a tree on k vertices of maximum degree at most d , rooted at r . Let H=(V,E) be a non empty graph such that, for every X subseteq V(H) with X le 2k 2 , Let furthe",
+                      "updatedAt":  "2026-06-16T15:54:26.0000000+08:00"
+                  },
+                  {
+                      "id":  "手写 notes/Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees",
+                      "title":  "Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees",
+                      "path":  "手写 notes/Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees.md",
+                      "url":  "content/手写 notes/Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees.md",
+                      "folder":  "手写 notes",
+                      "tags":  [
+                                   "bounded_degree_trees",
+                                   "embedding",
+                                   "expanders",
+                                   "pseudorandom_graphs",
+                                   "random_graphs",
+                                   "spanning_trees"
+                               ],
+                      "outlinks":  [
+                                       "AKS Question—Universal of bounded spanning trees in expander",
+                                       "Alon-etal-2007-Embedding-nearly-spanning-bounded-degree-trees",
+                                       "C-expander",
+                                       "Chernoff Bound",
+                                       "Friedman–Pippenger () — expanders contain small bounded-degree trees",
+                                       "LLL"
+                                   ],
+                      "excerpt":  "Main results Theorem 1 (Random graph) If D ge 2 and 0\u003c varepsilon\u003c1/2 , then there exists c=c(D, varepsilon) such that a.a.s. G(n,c/n) contains every tree T with T =(1 varepsilon)n",
+                      "updatedAt":  "2026-06-16T15:47:43.0000000+08:00"
+                  },
+                  {
+                      "id":  "手写 notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders",
+                      "title":  "Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders",
+                      "path":  "手写 notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders.md",
+                      "url":  "content/手写 notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders.md",
+                      "folder":  "手写 notes",
+                      "tags":  [
+                                   "embedding",
+                                   "expanders",
+                                   "level_2",
+                                   "Michael_Krivelevich",
+                                   "Nemanja_Draganic",
+                                   "online_algorithm",
+                                   "Rajko_Nenadov",
+                                   "roll_back",
+                                   "size_Ramsey",
+                                   "spectral_graph_theory",
+                                   "TAMS",
+                                   "topological_minor",
+                                   "unfinished"
+                               ],
+                      "outlinks":  [
+                                       "Draganic-etal-2022-Rolling-backwards-can-move-you-forward-On-embedding-problems-in-sparse-expanders",
+                                       "Friedman–Pippenger () — expanders contain small bounded-degree trees",
+                                       "Roll-back",
+                                       "Size-Ramsey number"
+                                   ],
+                      "excerpt":  "Nemanja Draganic Michael Krivelevich Rajko Nenadov TAMS expanders embedding roll back online algorithm topological minor spectral graph theory size Ramsey level 2 unfinished 标题 ：Ro",
+                      "updatedAt":  "2026-06-16T15:44:37.0000000+08:00"
+                  },
+                  {
+                      "id":  "手写 notes/Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs",
+                      "title":  "引入",
+                      "path":  "手写 notes/Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs.md",
+                      "url":  "content/手写 notes/Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs.md",
+                      "folder":  "手写 notes",
+                      "tags":  [
+                                   "hamiltonicity",
+                                   "resilience_perturbation",
+                                   "spread_thresholds"
+                               ],
+                      "outlinks":  [
+                                       "{6E4E37ED-0417-4B80-AF67-687C70FB9100}",
+                                       "{BA2158F2-D13E-46DE-8C7A-CAF1F6CE440E}",
+                                       "Nenadov-etal-2024-Spread-blow-up-lemma-with-an-application-to-perturbed-random-graphs",
+                                       "proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs",
+                                       "一个由 codegree 控制 regularity 的准随机判据"
+                                   ],
+                      "excerpt":  "引入 该文章的结果包括： 一个 spread 版本的 blowup lemma， 以及对其的应用，得到了在 perturb graph 里 找 ell power Hamilton cycle的结果。 普通 blow up lemma 给的是： 在 super regular blow up 中，存在一个合法嵌入 phi:H hookrightarrow G",
+                      "updatedAt":  "2026-06-17T15:38:54.9252958+08:00"
+                  },
+                  {
+                      "id":  "reference/proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs",
+                      "title":  "proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs",
+                      "path":  "reference/proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs.md",
+                      "url":  "content/reference/proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs.md",
+                      "folder":  "reference",
+                      "tags":  [
+                                   "spread_thresholds"
+                               ],
+                      "outlinks":  [
+                                       "{0AF26F84-3142-4CFE-93AE-192924350008}",
+                                       "{546438F3-D64F-4B3B-9426-D2AAC5DD0524}",
+                                       "{9106E835-8747-48CD-AA3B-C5FC19D4A0DB}",
+                                       "{9CABE1F0-7B28-44B8-A2BC-4151B65442AE}",
+                                       "{D33A0BC9-E4E7-498E-BC20-789CCEFE6C63}",
+                                       "{FDFE1021-4288-4D77-A391-48692259DBC0}",
+                                       "Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs"
+                                   ],
+                      "excerpt":  "[!example] Lemma 5. 设 G 是一个二部图，两个顶点类分别为 X 1 和 X 2 ，且二者大小均为 N 。假设 G 是 ( varepsilon, delta) super regular 的。那么，对任意 其中 C 是一个足够大的绝对常数， G 都包含一个生成子图，其密度为 bar d ，并且它是 varepsilon\u0027 super re",
+                      "updatedAt":  "2026-06-14T20:03:23.5852490+08:00"
+                  },
+                  {
+                      "id":  "手写 notes/Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs",
+                      "title":  "Main results",
+                      "path":  "手写 notes/Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs.md",
+                      "url":  "content/手写 notes/Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs.md",
+                      "folder":  "手写 notes",
+                      "tags":  [
+                                   "cycle_space",
+                                   "expanders",
+                                   "Hamilton_generated",
+                                   "hamiltonicity",
+                                   "parity_switcher",
+                                   "pseudorandom_graphs",
+                                   "random_regular_graphs",
+                                   "randomly_perturbed_graphs"
+                               ],
+                      "outlinks":  [
+                                       "A Partition Lemma",
+                                       "C-expander",
+                                       "Disjoint paths 工具",
+                                       "Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders",
+                                       "Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders",
+                                       "Friedman Theorem（随机正则图的第二特征值）",
+                                       "Hefetz-etal-2025-The-Hamilton-cycle-space-of-random-regular-graphs-and-randomly-perturbed-graphs",
+                                       "Parity-switcher",
+                                       "Spectral expander"
+                                   ],
+                      "excerpt":  "Main results [!danger] Theorem 1.1 (Main Theorem, odd order). 存在整数 d 0 ，使得对任意 d ge d 0 ，若 G sim G {n,d} 且 n 为奇数，则 a.a.s. C n(G)=C(G) 。 [!tip] Theorem 1.2 (even order). 存在整数 d 0 ，使得",
+                      "updatedAt":  "2026-07-04T12:30:04.7789996+08:00"
                   },
                   {
                       "id":  "手写 notes/Hyde–Morrison–Müyesser–Pavez-Signé (2023) — Spanning trees in pseudorandom graphs",
@@ -439,107 +514,86 @@
                       "updatedAt":  "2026-06-16T16:20:36.0000000+08:00"
                   },
                   {
-                      "id":  "手写 notes/Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs",
-                      "title":  "引入",
-                      "path":  "手写 notes/Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs.md",
-                      "url":  "content/手写 notes/Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs.md",
-                      "folder":  "手写 notes",
+                      "id":  "reference/吸收方法/Distributive absorption method",
+                      "title":  "Distributive absorption method",
+                      "path":  "reference/吸收方法/Distributive absorption method.md",
+                      "url":  "content/reference/吸收方法/Distributive absorption method.md",
+                      "folder":  "reference/吸收方法",
                       "tags":  [
+                                   "absorbing_method",
                                    "hamiltonicity",
-                                   "resilience_perturbation",
-                                   "spread_thresholds"
+                                   "matchings_tilings_factors",
+                                   "probabilistic_method",
+                                   "spanning_trees"
                                ],
                       "outlinks":  [
-                                       "{6E4E37ED-0417-4B80-AF67-687C70FB9100}",
-                                       "{BA2158F2-D13E-46DE-8C7A-CAF1F6CE440E}",
-                                       "Nenadov-etal-2024-Spread-blow-up-lemma-with-an-application-to-perturbed-random-graphs",
-                                       "proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs",
-                                       "一个由 codegree 控制 regularity 的准随机判据"
+                                       "Absorbing method",
+                                       "Absorbing method based on lattice"
                                    ],
-                      "excerpt":  "引入 该文章的结果包括： 一个 spread 版本的 blowup lemma， 以及对其的应用，得到了在 perturb graph 里 找 ell power Hamilton cycle的结果。 普通 blow up lemma 给的是： 在 super regular blow up 中，存在一个合法嵌入 phi:H hookrightarrow G",
-                      "updatedAt":  "2026-06-17T15:38:54.9252958+08:00"
+                      "excerpt":  "这是什么 分布式吸收法是 Absorbing method 的一个变体。另见 Absorbing method based on lattice （处理多维整除约束的格基版本）。 吸收法的大致想法是： 先提前准备一小块“特殊结构”，等到最后还剩下一点难处理的顶点或小结构时，再用这块特殊结构把它们“吸收”进去，从而完成整个构造。 所谓 分布式 ，意思是： 它不",
+                      "updatedAt":  "2026-06-12T16:26:37.2577496+08:00"
                   },
                   {
-                      "id":  "模板/模板-概念定义",
-                      "title":  "{{概念名}}",
-                      "path":  "模板/模板-概念定义.md",
-                      "url":  "content/模板/模板-概念定义.md",
-                      "folder":  "模板",
+                      "id":  "reference/概率不等式/Chernoff Bound",
+                      "title":  "Chernoff Bound",
+                      "path":  "reference/概率不等式/Chernoff Bound.md",
+                      "url":  "content/reference/概率不等式/Chernoff Bound.md",
+                      "folder":  "reference/概率不等式",
                       "tags":  [
-
+                                   "probabilistic_method"
                                ],
                       "outlinks":  [
-                                       "概念 A",
-                                       "概念 B"
+                                       "Hypergeometric tail bound",
+                                       "Janson inequality",
+                                       "Lovász Local Lemma (LLL)"
                                    ],
-                      "excerpt":  "{{概念名}} 1. 定义 [!definition] Definition 称……为 {{概念名}} ，如果…… 形式化地说，设……，若满足： 则称其为 {{概念名}}。 参数 ： 符号 含义 典型范围 n d varepsilon 2. 人话解释 这个定义想表达的是： 也就是说，它衡量的是：…… 3. 直观图像 [!intuition] 直觉 …… 情况",
-                      "updatedAt":  "2026-06-12T16:26:37.3309301+08:00"
+                      "excerpt":  "Theorem. 设 X= sum {i=1}^n X i ，其中 X 1, dots,X n 相互独立，且每个 X i in {0,1 } 。记 mu= mathbb E[X] 。则对任意 0\u003c delta\u003c1 ，有 这就是说，独立伯努利变量之和会高度集中在它的期望附近。 粗略记忆版 很多证明里其实只记下面这句话就够了： 若 X 是独立 0 1 变量之和，",
+                      "updatedAt":  "2026-06-12T16:26:37.2494019+08:00"
                   },
                   {
-                      "id":  "模板/纯数博士使用AI Agent的工作流程",
-                      "title":  "纯数博士使用 AI Agent 的工作流程",
-                      "path":  "模板/纯数博士使用AI Agent的工作流程.md",
-                      "url":  "content/模板/纯数博士使用AI Agent的工作流程.md",
-                      "folder":  "模板",
+                      "id":  "reference/吸收方法/Absorbing method based on lattice",
+                      "title":  "Absorbing method based on lattice",
+                      "path":  "reference/吸收方法/Absorbing method based on lattice.md",
+                      "url":  "content/reference/吸收方法/Absorbing method based on lattice.md",
+                      "folder":  "reference/吸收方法",
                       "tags":  [
-                                   "ai_draft"
+                                   "absorbing_method",
+                                   "hamiltonicity",
+                                   "matchings_tilings_factors",
+                                   "probabilistic_method",
+                                   "spanning_trees"
                                ],
                       "outlinks":  [
-
+                                       "Absorbing method",
+                                       "Distributive absorption method"
                                    ],
-                      "excerpt":  "纯数博士使用 AI Agent 的工作流程 一、五级整合模型 柏林 Zuse 研究所的 The Agentic Researcher （arXiv:2603.15914）给出了最清晰的分类框架： 级别 名称 AI 做什么 纯数场景举例 0 传统 无 AI LaTeX、Mathematica、纸笔推演 1 顾问 聊天问答 问定义、找引用、头脑风暴思路 2 打字",
-                      "updatedAt":  "2026-06-12T16:26:37.3399287+08:00"
+                      "excerpt":  "这是 Absorbing method 的一个进阶变体，与 Distributive absorption method 共同构成吸收方法的三大分支。 为什么需要更精细的吸收（动机） 在很多问题中，困难不只是： 剩下的顶点少 而是： 剩下的顶点在不同部分中的分布必须满足整除条件 例如： perfect matching：总数必须是偶数 (H ) tiling",
+                      "updatedAt":  "2026-06-12T16:26:37.2387213+08:00"
                   },
                   {
-                      "id":  "附件/proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs",
-                      "title":  "proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs",
-                      "path":  "附件/proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs.md",
-                      "url":  "content/附件/proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs.md",
-                      "folder":  "附件",
+                      "id":  "reference/吸收方法/Absorbing method",
+                      "title":  "Absorbing method",
+                      "path":  "reference/吸收方法/Absorbing method.md",
+                      "url":  "content/reference/吸收方法/Absorbing method.md",
+                      "folder":  "reference/吸收方法",
                       "tags":  [
-                                   "spread_thresholds"
+                                   "absorbing_method",
+                                   "embedding_universality",
+                                   "extremal_ramsey_turan",
+                                   "graph_theory",
+                                   "hamiltonicity"
                                ],
                       "outlinks":  [
-                                       "{0AF26F84-3142-4CFE-93AE-192924350008}",
-                                       "{546438F3-D64F-4B3B-9426-D2AAC5DD0524}",
-                                       "{9106E835-8747-48CD-AA3B-C5FC19D4A0DB}",
-                                       "{9CABE1F0-7B28-44B8-A2BC-4151B65442AE}",
-                                       "{D33A0BC9-E4E7-498E-BC20-789CCEFE6C63}",
-                                       "{FDFE1021-4288-4D77-A391-48692259DBC0}",
-                                       "Nenadov-Pham (2024) — Spread blow-up lemma with an application to perturbed random graphs"
+                                       "Absorbing method based on lattice",
+                                       "Chernoff Bound",
+                                       "Distributive absorption method",
+                                       "Extendable method",
+                                       "Lovász Local Lemma (LLL)",
+                                       "Posa rotation",
+                                       "Reserved connector theorem"
                                    ],
-                      "excerpt":  "[!example] Lemma 5. 设 G 是一个二部图，两个顶点类分别为 X 1 和 X 2 ，且二者大小均为 N 。假设 G 是 ( varepsilon, delta) super regular 的。那么，对任意 其中 C 是一个足够大的绝对常数， G 都包含一个生成子图，其密度为 bar d ，并且它是 varepsilon\u0027 super re",
-                      "updatedAt":  "2026-06-14T20:03:23.5852490+08:00"
-                  },
-                  {
-                      "id":  "模板/模板-论文精读",
-                      "title":  "{{title}}",
-                      "path":  "模板/模板-论文精读.md",
-                      "url":  "content/模板/模板-论文精读.md",
-                      "folder":  "模板",
-                      "tags":  [
-
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "{{title}} 1. 基本信息、背景与问题 我为什么读这篇 ： [!abstract] 一句话总结 这篇文章主要证明了：…… 这篇文章研究的问题是： [!question] 核心问题 在什么条件下，是否存在 / 包含 / 生成某个结构？ 相关背景 ： 已知结果 1： 已知结果 2： 本文改进 ： 2. 主定理 [!theorem] Theorem 设……",
-                      "updatedAt":  "2026-06-12T16:26:37.3339293+08:00"
-                  },
-                  {
-                      "id":  "模板/模板-问题",
-                      "title":  "{{问题标题}}",
-                      "path":  "模板/模板-问题.md",
-                      "url":  "content/模板/模板-问题.md",
-                      "folder":  "模板",
-                      "tags":  [
-
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "{{问题标题}} 1. 问题描述 对象 ： 图 / 超图 / 随机模型： 参数： 条件： 目标 ： [!question] 核心问题 是否有……？ 更具体地： 动机 （为什么关心）： 2. 已知结果 结果 条件 界/结论 方法 出处 当前最好下界 ： 当前最好上界 ： 3. 为什么自然 它是……的加强 / 推广 / 变体 它和……的阈值 / 嵌入问题有关 它",
-                      "updatedAt":  "2026-06-12T16:26:37.3369320+08:00"
+                      "excerpt":  "基本思想 典型证明思路往往是下面三步： Step 1. 构造一个很小的 absorbing set 先找到一个小集合 A subseteq V(G) ，满足： A 很小； 对任意足够小的“合适”顶点集 R subseteq V(G) setminus A ，子图 G[A cup R] 中仍然存在同类型目标结构。 这时称 A 可以吸收 R 。 Step 2. ",
+                      "updatedAt":  "2026-06-12T21:35:27.0846040+08:00"
                   },
                   {
                       "id":  "reference/算法/DFS algorithm",
@@ -612,150 +666,23 @@
                       "updatedAt":  "2026-07-04T10:47:39.8114146+08:00"
                   },
                   {
-                      "id":  "手写 notes/Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees",
-                      "title":  "Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees",
-                      "path":  "手写 notes/Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees.md",
-                      "url":  "content/手写 notes/Alon–Krivelevich–Sudakov (2007) — Nearly-spanning bounded-degree trees.md",
-                      "folder":  "手写 notes",
-                      "tags":  [
-                                   "bounded_degree_trees",
-                                   "embedding",
-                                   "expanders",
-                                   "pseudorandom_graphs",
-                                   "random_graphs",
-                                   "spanning_trees"
-                               ],
-                      "outlinks":  [
-                                       "AKS Question—Universal of bounded spanning trees in expander",
-                                       "Alon-etal-2007-Embedding-nearly-spanning-bounded-degree-trees",
-                                       "C-expander",
-                                       "Chernoff Bound",
-                                       "Friedman–Pippenger () — expanders contain small bounded-degree trees",
-                                       "LLL"
-                                   ],
-                      "excerpt":  "Main results Theorem 1 (Random graph) If D ge 2 and 0\u003c varepsilon\u003c1/2 , then there exists c=c(D, varepsilon) such that a.a.s. G(n,c/n) contains every tree T with T =(1 varepsilon)n",
-                      "updatedAt":  "2026-06-16T15:47:43.0000000+08:00"
-                  },
-                  {
-                      "id":  "手写 notes/Friedman–Pippenger (1987) — expanders contain small bounded-degree trees",
-                      "title":  "Friedman–Pippenger (1987) — expanders contain small bounded-degree trees",
-                      "path":  "手写 notes/Friedman–Pippenger (1987) — expanders contain small bounded-degree trees.md",
-                      "url":  "content/手写 notes/Friedman–Pippenger (1987) — expanders contain small bounded-degree trees.md",
-                      "folder":  "手写 notes",
-                      "tags":  [
-                                   "bounded_degree_trees",
-                                   "embedding",
-                                   "expanders",
-                                   "rooted_trees"
-                               ],
-                      "outlinks":  [
-                                       "Friedman-Pippenger-1987-expanding-graphs-contain-small-trees"
-                                   ],
-                      "excerpt":  "Theorem. Let T be a tree on k vertices of maximum degree at most d , rooted at r . Let H=(V,E) be a non empty graph such that, for every X subseteq V(H) with X le 2k 2 , Let furthe",
-                      "updatedAt":  "2026-06-16T15:54:26.0000000+08:00"
-                  },
-                  {
-                      "id":  "手写 notes/Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs",
-                      "title":  "Main results",
-                      "path":  "手写 notes/Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs.md",
-                      "url":  "content/手写 notes/Hefetz–Krivelevich (2026) — Hamilton cycle space in random regular and randomly perturbed graphs.md",
-                      "folder":  "手写 notes",
-                      "tags":  [
-                                   "cycle_space",
-                                   "expanders",
-                                   "Hamilton_generated",
-                                   "hamiltonicity",
-                                   "parity_switcher",
-                                   "pseudorandom_graphs",
-                                   "random_regular_graphs",
-                                   "randomly_perturbed_graphs"
-                               ],
-                      "outlinks":  [
-                                       "A Partition Lemma",
-                                       "C-expander",
-                                       "Disjoint paths 工具",
-                                       "Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders",
-                                       "Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders",
-                                       "Friedman Theorem（随机正则图的第二特征值）",
-                                       "Hefetz-etal-2025-The-Hamilton-cycle-space-of-random-regular-graphs-and-randomly-perturbed-graphs",
-                                       "Parity-switcher",
-                                       "Spectral expander"
-                                   ],
-                      "excerpt":  "Main results [!danger] Theorem 1.1 (Main Theorem, odd order). 存在整数 d 0 ，使得对任意 d ge d 0 ，若 G sim G {n,d} 且 n 为奇数，则 a.a.s. C n(G)=C(G) 。 [!tip] Theorem 1.2 (even order). 存在整数 d 0 ，使得",
-                      "updatedAt":  "2026-07-04T12:30:04.7789996+08:00"
-                  },
-                  {
-                      "id":  "手写 notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders",
-                      "title":  "Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders",
-                      "path":  "手写 notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders.md",
-                      "url":  "content/手写 notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders.md",
-                      "folder":  "手写 notes",
-                      "tags":  [
-                                   "embedding",
-                                   "expanders",
-                                   "level_2",
-                                   "Michael_Krivelevich",
-                                   "Nemanja_Draganic",
-                                   "online_algorithm",
-                                   "Rajko_Nenadov",
-                                   "roll_back",
-                                   "size_Ramsey",
-                                   "spectral_graph_theory",
-                                   "TAMS",
-                                   "topological_minor",
-                                   "unfinished"
-                               ],
-                      "outlinks":  [
-                                       "Draganic-etal-2022-Rolling-backwards-can-move-you-forward-On-embedding-problems-in-sparse-expanders",
-                                       "Friedman–Pippenger () — expanders contain small bounded-degree trees",
-                                       "Roll-back",
-                                       "Size-Ramsey number"
-                                   ],
-                      "excerpt":  "Nemanja Draganic Michael Krivelevich Rajko Nenadov TAMS expanders embedding roll back online algorithm topological minor spectral graph theory size Ramsey level 2 unfinished 标题 ：Ro",
-                      "updatedAt":  "2026-06-16T15:44:37.0000000+08:00"
-                  },
-                  {
-                      "id":  "手写 notes/Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders",
-                      "title":  "Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders",
-                      "path":  "手写 notes/Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders.md",
-                      "url":  "content/手写 notes/Draganić–Montgomery–Munhá Correia–Pokrovskiy–Sudakov (2024) — Hamiltonicity of expanders.md",
-                      "folder":  "手写 notes",
-                      "tags":  [
-                                   "C-expander",
-                                   "embedding",
-                                   "expanders",
-                                   "extendability",
-                                   "Hamilton",
-                                   "posa_rotation",
-                                   "pseudorandom_graphs",
-                                   "sorting_network",
-                                   "spectral_graph_theory"
-                               ],
-                      "outlinks":  [
-                                       "Draganic-etal-2024-Hamiltonicity-of-expanders-optimal-bounds-and-applications",
-                                       "Posa rotation",
-                                       "Spectral expander"
-                                   ],
-                      "excerpt":  "Main Result Theorem. 对每个充分大的常数 C 0 ，每个 C expander 都是 Hamiltonian 的。 Corollary. 存在一个常数 C 0 ，使得如果 则每个 (n,d, lambda) 图都是 Hamiltonian 的。 这是因为 在 Spectral expander 中，对每个 C 0 ，都存在一个常数 C 0",
-                      "updatedAt":  "2026-06-16T15:54:36.0000000+08:00"
-                  },
-                  {
-                      "id":  "reference/Lovász Local Lemma (LLL)",
-                      "title":  "Lovász Local Lemma (LLL)",
-                      "path":  "reference/Lovász Local Lemma (LLL).md",
-                      "url":  "content/reference/Lovász Local Lemma (LLL).md",
+                      "id":  "reference/Local resilience",
+                      "title":  "Local resilience",
+                      "path":  "reference/Local resilience.md",
+                      "url":  "content/reference/Local resilience.md",
                       "folder":  "reference",
                       "tags":  [
-                                   "LLL",
-                                   "probabilistic_method"
+                                   "graph_theory",
+                                   "resilience_perturbation"
                                ],
                       "outlinks":  [
-                                       "A Partition Lemma",
-                                       "Chernoff Bound",
-                                       "Janson inequality"
+                                       "Dirac theorem",
+                                       "Global resilience",
+                                       "Robust Hamiltonicity",
+                                       "Sudakov–Vu (2008) — Local resilience of graphs"
                                    ],
-                      "excerpt":  "直观理解 把 A 1, dots,A n 看成坏事件。局部引理说明：即使这些坏事件不是完全独立的，只要每个坏事件发生的概率都很小，并且每个坏事件只依赖于少数其他坏事件，那么仍然有可能同时避开所有坏事件。 它通常在并合界失效时使用：虽然 sum i Pr(A i) 可能不小，但由于依赖关系是局部的，仍可推出“所有坏事件都不发生”的概率为正。 对称型表述 设 A",
-                      "updatedAt":  "2026-06-12T16:26:37.2876779+08:00"
+                      "excerpt":  "设 G 是图， mathcal P 是一个图性质。 G 关于 mathcal P 的 local resilience 衡量： 每个顶点附近最多允许被对手删掉多少条 incident edges，剩余图仍然满足 mathcal P 。 常见表述是：若对任意 H subseteq G ，只要 就有 则称 G 对 mathcal P 有 local resili",
+                      "updatedAt":  "2026-06-12T16:26:37.2841796+08:00"
                   },
                   {
                       "id":  "ai notes/Pham–Sah–Sawhney–Simkin (2022) — A toolkit for robust thresholds",
@@ -838,80 +765,6 @@
                       "updatedAt":  "2026-06-15T15:18:22.0000000+08:00"
                   },
                   {
-                      "id":  "ai notes/surveys/Survey - Clique Immersions and Independence Number",
-                      "title":  "Clique Immersions and Independence Number",
-                      "path":  "ai notes/surveys/Survey - Clique Immersions and Independence Number.md",
-                      "url":  "content/ai notes/surveys/Survey - Clique Immersions and Independence Number.md",
-                      "folder":  "ai notes/surveys",
-                      "tags":  [
-                                   "clique-immersion",
-                                   "immersion",
-                                   "Me",
-                                   "survey"
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "Clique Immersions and Independence Number 副标题：从 alpha(G)=2 到 Abu Khzam Langston 猜想 [!summary] 一句话版本 Clique immersion 版 Hadwiger 猜想预言：每个图 G 都含有 K { chi(G)} 的 weak immersion。 对 alpha",
-                      "updatedAt":  "2026-06-17T17:20:02.3991995+08:00"
-                  },
-                  {
-                      "id":  "ai notes/surveys/Survey-Readable-Template",
-                      "title":  "{{Survey 标题}}",
-                      "path":  "ai notes/surveys/Survey-Readable-Template.md",
-                      "url":  "content/ai notes/surveys/Survey-Readable-Template.md",
-                      "folder":  "ai notes/surveys",
-                      "tags":  [
-                                   "Me",
-                                   "survey"
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "{{Survey 标题}} [!summary] 一句话版本 {{用 2 4 句话说明：这个领域在问什么、为什么重要、目前最核心的结论是什么。}} [!tip] 读法 如果只想快速建立地图，读 0. 导读 、 1. 核心问题 、 4. 结果路线图 。 如果想追证明技术，读 3. 方法蓝图 、 5. 关键证明机制 。 如果想找研究切入点，读 7. 开放问题 。",
-                      "updatedAt":  "2026-06-17T17:11:29.4415901+08:00"
-                  },
-                  {
-                      "id":  "ai notes/surveys/Survey-spread measure",
-                      "title":  "Spread Measure 与 Robust Thresholds 论文地图",
-                      "path":  "ai notes/surveys/Survey-spread measure.md",
-                      "url":  "content/ai notes/surveys/Survey-spread measure.md",
-                      "folder":  "ai notes/surveys",
-                      "tags":  [
-                                   "Kahn-Kalai",
-                                   "Me",
-                                   "random-structures",
-                                   "spread",
-                                   "survey",
-                                   "threshold"
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "Spread Measure 与 Robust Thresholds 论文地图 [!summary] 一句话版本 这份笔记把 18 篇论文按 spread、阈值、随机生成结构、Hamiltonicity 与设计理论重新排成一张阅读地图。 主线是：spreadness 如何把“存在一个结构”升级为“存在一个不集中的结构分布”，并进一步导向 Kahn Kalai",
-                      "updatedAt":  "2026-06-17T17:20:02.4021996+08:00"
-                  },
-                  {
-                      "id":  "ai notes/surveys/Survey - Rainbow Turan Problems for Cycles",
-                      "title":  "Rainbow Turan Problems for Cycles",
-                      "path":  "ai notes/surveys/Survey - Rainbow Turan Problems for Cycles.md",
-                      "url":  "content/ai notes/surveys/Survey - Rainbow Turan Problems for Cycles.md",
-                      "folder":  "ai notes/surveys",
-                      "tags":  [
-                                   "cycles",
-                                   "extremal-graph-theory",
-                                   "Me",
-                                   "properly-edge-colored",
-                                   "rainbow-turan",
-                                   "survey"
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "Rainbow Turan Problems for Cycles [!summary] 一句话版本 这份笔记整理 properly edge colored graphs 中 rainbow cycle 的 Turan 型问题。主线有两条：固定偶圈 C {2k} 的 rainbow Turan number，以及禁止所有 rainbow cycles 时的",
-                      "updatedAt":  "2026-06-22T23:23:05.0000000+08:00"
-                  },
-                  {
                       "id":  "ai notes/surveys/Survey-Absorption Method",
                       "title":  "吸收方法综述：图论与极值组合中的 Absorption Method",
                       "path":  "ai notes/surveys/Survey-Absorption Method.md",
@@ -932,25 +785,58 @@
                       "updatedAt":  "2026-06-17T17:20:02.4011999+08:00"
                   },
                   {
-                      "id":  "ai notes/Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs",
-                      "title":  "Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs",
-                      "path":  "ai notes/Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs.md",
-                      "url":  "content/ai notes/Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs.md",
-                      "folder":  "ai notes",
+                      "id":  "ai notes/surveys/Survey-Readable-Template",
+                      "title":  "{{Survey 标题}}",
+                      "path":  "ai notes/surveys/Survey-Readable-Template.md",
+                      "url":  "content/ai notes/surveys/Survey-Readable-Template.md",
+                      "folder":  "ai notes/surveys",
                       "tags":  [
-                                   "absorbing_method",
-                                   "ai_draft",
-                                   "dirac_type",
-                                   "roll_back",
-                                   "spanning_trees"
+                                   "Me",
+                                   "survey"
                                ],
                       "outlinks":  [
-                                       "Han–Yang (2023)",
-                                       "Hyde et al",
-                                       "Johannsen et al"
+
                                    ],
-                      "excerpt":  "论文：Unbounded degree spanning hypertrees in Dirac hypergraphs 作者：Yaobin Chen、Seonghyuk Im、Junchi Zhang（2025） 完整定理 设 H 是 k 均匀 Dirac 超图：每个 (k 1) 子集至少包含在 ( frac12+o(1))n 条超边中。 则 H 包含任意",
-                      "updatedAt":  "2026-06-15T15:12:53.0000000+08:00"
+                      "excerpt":  "{{Survey 标题}} [!summary] 一句话版本 {{用 2 4 句话说明：这个领域在问什么、为什么重要、目前最核心的结论是什么。}} [!tip] 读法 如果只想快速建立地图，读 0. 导读 、 1. 核心问题 、 4. 结果路线图 。 如果想追证明技术，读 3. 方法蓝图 、 5. 关键证明机制 。 如果想找研究切入点，读 7. 开放问题 。",
+                      "updatedAt":  "2026-06-17T17:11:29.4415901+08:00"
+                  },
+                  {
+                      "id":  "ai notes/surveys/Survey - Clique Immersions and Independence Number",
+                      "title":  "Clique Immersions and Independence Number",
+                      "path":  "ai notes/surveys/Survey - Clique Immersions and Independence Number.md",
+                      "url":  "content/ai notes/surveys/Survey - Clique Immersions and Independence Number.md",
+                      "folder":  "ai notes/surveys",
+                      "tags":  [
+                                   "clique-immersion",
+                                   "immersion",
+                                   "Me",
+                                   "survey"
+                               ],
+                      "outlinks":  [
+
+                                   ],
+                      "excerpt":  "Clique Immersions and Independence Number 副标题：从 alpha(G)=2 到 Abu Khzam Langston 猜想 [!summary] 一句话版本 Clique immersion 版 Hadwiger 猜想预言：每个图 G 都含有 K { chi(G)} 的 weak immersion。 对 alpha",
+                      "updatedAt":  "2026-06-17T17:20:02.3991995+08:00"
+                  },
+                  {
+                      "id":  "ai notes/surveys/Survey - Rainbow Turan Problems for Cycles",
+                      "title":  "Rainbow Turan Problems for Cycles",
+                      "path":  "ai notes/surveys/Survey - Rainbow Turan Problems for Cycles.md",
+                      "url":  "content/ai notes/surveys/Survey - Rainbow Turan Problems for Cycles.md",
+                      "folder":  "ai notes/surveys",
+                      "tags":  [
+                                   "cycles",
+                                   "extremal-graph-theory",
+                                   "Me",
+                                   "properly-edge-colored",
+                                   "rainbow-turan",
+                                   "survey"
+                               ],
+                      "outlinks":  [
+
+                                   ],
+                      "excerpt":  "Rainbow Turan Problems for Cycles [!summary] 一句话版本 这份笔记整理 properly edge colored graphs 中 rainbow cycle 的 Turan 型问题。主线有两条：固定偶圈 C {2k} 的 rainbow Turan number，以及禁止所有 rainbow cycles 时的",
+                      "updatedAt":  "2026-06-22T23:23:05.0000000+08:00"
                   },
                   {
                       "id":  "ai notes/Christoph et al. (2026) — The Hamilton space of pseudorandom graphs",
@@ -981,75 +867,6 @@
                       "updatedAt":  "2026-06-18T12:46:04.0000000+08:00"
                   },
                   {
-                      "id":  "标签说明",
-                      "title":  "标签说明",
-                      "path":  "标签说明.md",
-                      "url":  "content/标签说明.md",
-                      "folder":  "",
-                      "tags":  [
-                                   "absorbing_method",
-                                   "additive_isoperimetric",
-                                   "ai_draft",
-                                   "algorithmic_games",
-                                   "coloring_rainbow",
-                                   "containers",
-                                   "decomposition_covering",
-                                   "dirac_type",
-                                   "embedding_universality",
-                                   "expanders",
-                                   "extremal_ramsey_turan",
-                                   "general",
-                                   "graph_theory",
-                                   "hamiltonicity",
-                                   "hypergraphs",
-                                   "immersion_minor_subdivision",
-                                   "kelly_conjecture",
-                                   "lp_duality",
-                                   "matchings_tilings_factors",
-                                   "paper",
-                                   "parity_switcher",
-                                   "posa_rotation",
-                                   "probabilistic_method",
-                                   "pseudorandom_graphs",
-                                   "regularity_lemma",
-                                   "resilience_perturbation",
-                                   "roll_back",
-                                   "routing_connectors",
-                                   "sorting_network",
-                                   "spanning_trees",
-                                   "spectral_method",
-                                   "spread_thresholds",
-                                   "tool"
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "标签说明 这篇笔记维护当前 vault 的核心标签。标签分为三类：状态、对象、方法。日常写笔记时优先使用下面这些标签，避免为同一概念发明多个近义标签。 状态标签 标签 含义 ai draft AI 生成或整理过、尚未人工核对的内容 paper 论文笔记或论文目录相关内容 tool 可复用工具、定理或方法笔记 对象标签 标签 含义 hamiltonicity ",
-                      "updatedAt":  "2026-06-12T21:52:35.3215772+08:00"
-                  },
-                  {
-                      "id":  "ai notes/Bucić et al. (2026) — Towards the Lovász conjecture via sublinear expanders",
-                      "title":  "Towards the Lovász conjecture via sublinear expanders",
-                      "path":  "ai notes/Bucić et al. (2026) — Towards the Lovász conjecture via sublinear expanders.md",
-                      "url":  "content/ai notes/Bucić et al. (2026) — Towards the Lovász conjecture via sublinear expanders.md",
-                      "folder":  "ai notes",
-                      "tags":  [
-                                   "ai_draft",
-                                   "expanders",
-                                   "hamiltonicity",
-                                   "longest_paths",
-                                   "lovasz_conjecture",
-                                   "paper-note",
-                                   "sublinear_expanders",
-                                   "vertex_transitive_graphs"
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "Towards the Lovász conjecture via sublinear expanders [!summary] 读完先记住什么 这篇论文研究 Lovász 猜想的一条弱化路线：不是直接证明每个连通 vertex transitive graph 有 Hamilton path/cycle，而是先保证它一定有很长的 cycle。作者证明：每个",
-                      "updatedAt":  "2026-06-24T16:12:11.0000000+08:00"
-                  },
-                  {
                       "id":  "ai notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders",
                       "title":  "Rolling backwards can move you forward: On embedding problems in sparse expanders",
                       "path":  "ai notes/Draganic–Krivelevich–Nenadov (2022) — Rolling Backwards — Embedding Problems in Sparse Expanders.md",
@@ -1074,6 +891,49 @@
                                    ],
                       "excerpt":  "Rolling backwards can move you forward: On embedding problems in sparse expanders [!summary] 读完先记住什么 这篇文章引入了 roll back（回滚） 这一核心嵌入技术：不只是一路向前贪心嵌入，而是在卡住时 按顺序撤回之前的步骤 ，释放空间后重新前进。作者用这一方法",
                       "updatedAt":  "2026-06-15T15:14:18.0000000+08:00"
+                  },
+                  {
+                      "id":  "ai notes/Bucić et al. (2026) — Towards the Lovász conjecture via sublinear expanders",
+                      "title":  "Towards the Lovász conjecture via sublinear expanders",
+                      "path":  "ai notes/Bucić et al. (2026) — Towards the Lovász conjecture via sublinear expanders.md",
+                      "url":  "content/ai notes/Bucić et al. (2026) — Towards the Lovász conjecture via sublinear expanders.md",
+                      "folder":  "ai notes",
+                      "tags":  [
+                                   "ai_draft",
+                                   "expanders",
+                                   "hamiltonicity",
+                                   "longest_paths",
+                                   "lovasz_conjecture",
+                                   "paper-note",
+                                   "sublinear_expanders",
+                                   "vertex_transitive_graphs"
+                               ],
+                      "outlinks":  [
+
+                                   ],
+                      "excerpt":  "Towards the Lovász conjecture via sublinear expanders [!summary] 读完先记住什么 这篇论文研究 Lovász 猜想的一条弱化路线：不是直接证明每个连通 vertex transitive graph 有 Hamilton path/cycle，而是先保证它一定有很长的 cycle。作者证明：每个",
+                      "updatedAt":  "2026-06-24T16:12:11.0000000+08:00"
+                  },
+                  {
+                      "id":  "ai notes/Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs",
+                      "title":  "Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs",
+                      "path":  "ai notes/Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs.md",
+                      "url":  "content/ai notes/Chen et al. (2025) — Unbounded degree spanning hypertrees in Dirac hypergraphs.md",
+                      "folder":  "ai notes",
+                      "tags":  [
+                                   "absorbing_method",
+                                   "ai_draft",
+                                   "dirac_type",
+                                   "roll_back",
+                                   "spanning_trees"
+                               ],
+                      "outlinks":  [
+                                       "Han–Yang (2023)",
+                                       "Hyde et al",
+                                       "Johannsen et al"
+                                   ],
+                      "excerpt":  "论文：Unbounded degree spanning hypertrees in Dirac hypergraphs 作者：Yaobin Chen、Seonghyuk Im、Junchi Zhang（2025） 完整定理 设 H 是 k 均匀 Dirac 超图：每个 (k 1) 子集至少包含在 ( frac12+o(1))n 条超边中。 则 H 包含任意",
+                      "updatedAt":  "2026-06-15T15:12:53.0000000+08:00"
                   },
                   {
                       "id":  "ai notes/Hefetz–Krivelevich (2026) — On graphs whose cycle space is spanned by their Hamilton cycles",
@@ -1151,21 +1011,6 @@
                                    ],
                       "excerpt":  "Thresholds versus fractional expectation thresholds 1. 基本信息、背景与问题 我为什么读这篇 ：FKNP 是 spread measure 技术线的核心——它把 ALWZ 的组合 spread 提升为测度论语言，证明了 Talagrand 猜想。这是理解阈值统一框架的必读论文。 [!abstract] 一",
                       "updatedAt":  "2026-06-16T17:13:50.0000000+08:00"
-                  },
-                  {
-                      "id":  "ai notes/surveys/survey-uncrowded-hypergraphs-independence-number",
-                      "title":  "从 AKPSS 到 Shattering Threshold：Uncrowded 超图独立集理论的五十年",
-                      "path":  "ai notes/surveys/survey-uncrowded-hypergraphs-independence-number.md",
-                      "url":  "content/ai notes/surveys/survey-uncrowded-hypergraphs-independence-number.md",
-                      "folder":  "ai notes/surveys",
-                      "tags":  [
-                                   "Me"
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "从 AKPSS 到 Shattering Threshold：Uncrowded 超图独立集理论的五十年 以 Dhawan–Methuku–Vo (2026) 和 Yu–Zhang (2026) 为起点的综述 [!summary] 一句话版本 Uncrowded 超图独立集理论研究局部不拥挤条件如何强迫远大于随机采样平凡界的独立集。 主线从 AKPSS 的对",
-                      "updatedAt":  "2026-06-17T17:20:02.4042010+08:00"
                   },
                   {
                       "id":  "reference/Fadnavis chromatic polynomial asymptotic",
@@ -1246,22 +1091,23 @@
                       "updatedAt":  "2026-07-04T10:01:47.6135090+08:00"
                   },
                   {
-                      "id":  "reference/Global resilience",
-                      "title":  "Global resilience",
-                      "path":  "reference/Global resilience.md",
-                      "url":  "content/reference/Global resilience.md",
+                      "id":  "reference/Graph vulnerability parameters",
+                      "title":  "Graph vulnerability parameters",
+                      "path":  "reference/Graph vulnerability parameters.md",
+                      "url":  "content/reference/Graph vulnerability parameters.md",
                       "folder":  "reference",
                       "tags":  [
                                    "graph_theory",
                                    "resilience_perturbation"
                                ],
                       "outlinks":  [
-                                       "Graph vulnerability parameters",
+                                       "Global resilience",
                                        "Local resilience",
-                                       "Robust Hamiltonicity"
+                                       "Robust expansion",
+                                       "Spectral expander"
                                    ],
-                      "excerpt":  "设 G 是图， mathcal P 是一个图性质。 G 关于 mathcal P 的 global resilience 衡量： 总共删掉多少条边或多少个顶点后，剩余图仍然满足 mathcal P 。 边版本可以写成：若对任意 H subseteq G ，只要 就有 则 G 关于 mathcal P 的 global edge resilience 至少为 ",
-                      "updatedAt":  "2026-06-12T16:26:37.2677470+08:00"
+                      "excerpt":  "Graph vulnerability parameters 是传统图论中衡量图被删点或删边后多容易碎裂的一类参数。 这些概念不一定叫 resilience，但本质上也是 robustness measure。 参数 记号 含义 vertex connectivity kappa(G) 最少删多少点使图断开或变成平凡图 edge connectivity l",
+                      "updatedAt":  "2026-07-04T09:51:34.8084182+08:00"
                   },
                   {
                       "id":  "reference/Hypergeometric tail bound",
@@ -1279,23 +1125,22 @@
                       "updatedAt":  "2026-06-12T16:26:37.2781823+08:00"
                   },
                   {
-                      "id":  "reference/Local resilience",
-                      "title":  "Local resilience",
-                      "path":  "reference/Local resilience.md",
-                      "url":  "content/reference/Local resilience.md",
+                      "id":  "reference/Global resilience",
+                      "title":  "Global resilience",
+                      "path":  "reference/Global resilience.md",
+                      "url":  "content/reference/Global resilience.md",
                       "folder":  "reference",
                       "tags":  [
                                    "graph_theory",
                                    "resilience_perturbation"
                                ],
                       "outlinks":  [
-                                       "Dirac theorem",
-                                       "Global resilience",
-                                       "Robust Hamiltonicity",
-                                       "Sudakov–Vu (2008) — Local resilience of graphs"
+                                       "Graph vulnerability parameters",
+                                       "Local resilience",
+                                       "Robust Hamiltonicity"
                                    ],
-                      "excerpt":  "设 G 是图， mathcal P 是一个图性质。 G 关于 mathcal P 的 local resilience 衡量： 每个顶点附近最多允许被对手删掉多少条 incident edges，剩余图仍然满足 mathcal P 。 常见表述是：若对任意 H subseteq G ，只要 就有 则称 G 对 mathcal P 有 local resili",
-                      "updatedAt":  "2026-06-12T16:26:37.2841796+08:00"
+                      "excerpt":  "设 G 是图， mathcal P 是一个图性质。 G 关于 mathcal P 的 global resilience 衡量： 总共删掉多少条边或多少个顶点后，剩余图仍然满足 mathcal P 。 边版本可以写成：若对任意 H subseteq G ，只要 就有 则 G 关于 mathcal P 的 global edge resilience 至少为 ",
+                      "updatedAt":  "2026-06-12T16:26:37.2677470+08:00"
                   },
                   {
                       "id":  "reference/Graph robustness concepts",
@@ -1328,40 +1173,6 @@
                       "updatedAt":  "2026-06-23T23:27:52.0000000+08:00"
                   },
                   {
-                      "id":  "reference/Graph vulnerability parameters",
-                      "title":  "Graph vulnerability parameters",
-                      "path":  "reference/Graph vulnerability parameters.md",
-                      "url":  "content/reference/Graph vulnerability parameters.md",
-                      "folder":  "reference",
-                      "tags":  [
-                                   "graph_theory",
-                                   "resilience_perturbation"
-                               ],
-                      "outlinks":  [
-                                       "Global resilience",
-                                       "Local resilience",
-                                       "Robust expansion",
-                                       "Spectral expander"
-                                   ],
-                      "excerpt":  "Graph vulnerability parameters 是传统图论中衡量图被删点或删边后多容易碎裂的一类参数。 这些概念不一定叫 resilience，但本质上也是 robustness measure。 参数 记号 含义 vertex connectivity kappa(G) 最少删多少点使图断开或变成平凡图 edge connectivity l",
-                      "updatedAt":  "2026-07-04T09:51:34.8084182+08:00"
-                  },
-                  {
-                      "id":  "drafts/随笔",
-                      "title":  "随笔",
-                      "path":  "drafts/随笔.md",
-                      "url":  "content/drafts/随笔.md",
-                      "folder":  "drafts",
-                      "tags":  [
-
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "1. 分步骤讲解证明 2. 未必要按照原文顺序。可以按照你的理解来讲 我们说 一个算法是随机的 一般是指什么? 一般说“一个算法是随机的”，意思是： 算法在运行过程中会主动掷骰子。 也就是说，即使输入完全一样，算法每次运行时也可能因为内部随机选择不同，而走出不同过程、得到不同输出。 比如输入同一个图 G，算法要嵌入一棵树 T。如果算法在每一步都固定选“编号最",
-                      "updatedAt":  "2026-06-15T16:09:02.0000000+08:00"
-                  },
-                  {
                       "id":  "problems/AKS Question universal of bounded spanning trees in expander",
                       "title":  "AKS Question universal of bounded spanning trees in expander",
                       "path":  "problems/AKS Question universal of bounded spanning trees in expander.md",
@@ -1381,36 +1192,6 @@
                                    ],
                       "excerpt":  "Alon–Krivelevich–Sudakov (2007) — Nearly spanning bounded degree trees Question. 对任意 Delta in mathbb{N} ，都存在一个常数 C=C( Delta) ，使得每个满足 的 (n,d, lambda) 图，都包含每一棵具有 n 个顶点且最大度至多为 Delta 的",
                       "updatedAt":  "2026-06-12T16:26:37.2092642+08:00"
-                  },
-                  {
-                      "id":  "drafts/Spread blow-up lemma 证明笔记",
-                      "title":  "Spread blow-up lemma 证明笔记",
-                      "path":  "drafts/Spread blow-up lemma 证明笔记.md",
-                      "url":  "content/drafts/Spread blow-up lemma 证明笔记.md",
-                      "folder":  "drafts",
-                      "tags":  [
-
-                               ],
-                      "outlinks":  [
-
-                                   ],
-                      "excerpt":  "论文: Spread blow up lemma with an application to perturbed random graphs (Rajko Nenadov, Huy Tuan Pham, arXiv:2410.06132, 2024) 1. 证明总路线图 主定理: Lemma 2 (Spread Blow up Lemma) 依赖结构: 主",
-                      "updatedAt":  "2026-06-15T10:12:39.0000000+08:00"
-                  },
-                  {
-                      "id":  "drafts/日记-26.6",
-                      "title":  "话题1 Thresholds versus fractional expectation-thresholds",
-                      "path":  "drafts/日记-26.6.md",
-                      "url":  "content/drafts/日记-26.6.md",
-                      "folder":  "drafts",
-                      "tags":  [
-                                   "spread_thresholds"
-                               ],
-                      "outlinks":  [
-                                       "Frankston-etal-2019-Thresholds-versus-fractional-expectation-thresholds"
-                                   ],
-                      "excerpt":  "话题1 Thresholds versus fractional expectation thresholds Frankston etal 2019 Thresholds versus fractional expectation thresholds.pdf 1 假设 那么继续作用一次，有 以此类推，可以得到一列集合 S 1,S 2,S 3, dots ",
-                      "updatedAt":  "2026-06-14T19:49:16.7378843+08:00"
                   },
                   {
                       "id":  "problems/HG in a graph perturb a regular graph",
@@ -1433,6 +1214,41 @@
                                    ],
                       "excerpt":  "Posa rotation through a random permutation Related Posa rotation — 核心操作 Friedman\u0027s second eigenvalue Theorem（随机正则图的第二特征值） — 随机正则图的谱性质 Spectral expander — 伪随机图的谱刻画 ! Pasted image 20",
                       "updatedAt":  "2026-06-12T21:33:21.7112718+08:00"
+                  },
+                  {
+                      "id":  "ai notes/surveys/Survey-spread measure",
+                      "title":  "Spread Measure 与 Robust Thresholds 论文地图",
+                      "path":  "ai notes/surveys/Survey-spread measure.md",
+                      "url":  "content/ai notes/surveys/Survey-spread measure.md",
+                      "folder":  "ai notes/surveys",
+                      "tags":  [
+                                   "Kahn-Kalai",
+                                   "Me",
+                                   "random-structures",
+                                   "spread",
+                                   "survey",
+                                   "threshold"
+                               ],
+                      "outlinks":  [
+
+                                   ],
+                      "excerpt":  "Spread Measure 与 Robust Thresholds 论文地图 [!summary] 一句话版本 这份笔记把 18 篇论文按 spread、阈值、随机生成结构、Hamiltonicity 与设计理论重新排成一张阅读地图。 主线是：spreadness 如何把“存在一个结构”升级为“存在一个不集中的结构分布”，并进一步导向 Kahn Kalai",
+                      "updatedAt":  "2026-06-17T17:20:02.4021996+08:00"
+                  },
+                  {
+                      "id":  "ai notes/surveys/survey-uncrowded-hypergraphs-independence-number",
+                      "title":  "从 AKPSS 到 Shattering Threshold：Uncrowded 超图独立集理论的五十年",
+                      "path":  "ai notes/surveys/survey-uncrowded-hypergraphs-independence-number.md",
+                      "url":  "content/ai notes/surveys/survey-uncrowded-hypergraphs-independence-number.md",
+                      "folder":  "ai notes/surveys",
+                      "tags":  [
+                                   "Me"
+                               ],
+                      "outlinks":  [
+
+                                   ],
+                      "excerpt":  "从 AKPSS 到 Shattering Threshold：Uncrowded 超图独立集理论的五十年 以 Dhawan–Methuku–Vo (2026) 和 Yu–Zhang (2026) 为起点的综述 [!summary] 一句话版本 Uncrowded 超图独立集理论研究局部不拥挤条件如何强迫远大于随机采样平凡界的独立集。 主线从 AKPSS 的对",
+                      "updatedAt":  "2026-06-17T17:20:02.4042010+08:00"
                   },
                   {
                       "id":  "reference/A Partition Lemma",
@@ -1665,75 +1481,71 @@
                ],
     "tags":  [
                  {
+                     "name":  "1",
+                     "count":  1
+                 },
+                 {
                      "name":  "2",
                      "count":  1
+                 },
+                 {
+                     "name":  "embedding_universality",
+                     "count":  8
+                 },
+                 {
+                     "name":  "resilience_perturbation",
+                     "count":  11
+                 },
+                 {
+                     "name":  "roll_back",
+                     "count":  6
                  },
                  {
                      "name":  "lovasz_conjecture",
                      "count":  1
                  },
                  {
-                     "name":  "LLL",
+                     "name":  "hypergraph",
                      "count":  1
                  },
                  {
-                     "name":  "spectral_graph_theory",
-                     "count":  2
-                 },
-                 {
-                     "name":  "embedding_universality",
-                     "count":  9
-                 },
-                 {
-                     "name":  "1",
-                     "count":  1
+                     "name":  "absorbing_method",
+                     "count":  5
                  },
                  {
                      "name":  "10",
                      "count":  1
                  },
                  {
-                     "name":  "additive_isoperimetric",
-                     "count":  1
-                 },
-                 {
-                     "name":  "absorbing_method",
+                     "name":  "embedding",
                      "count":  6
                  },
                  {
-                     "name":  "randomly_perturbed_graphs",
-                     "count":  1
-                 },
-                 {
-                     "name":  "lp_duality",
-                     "count":  1
-                 },
-                 {
                      "name":  "spectral_method",
-                     "count":  5
+                     "count":  4
                  },
                  {
-                     "name":  "roll_back",
-                     "count":  7
-                 },
-                 {
-                     "name":  "survey",
-                     "count":  5
-                 },
-                 {
-                     "name":  "extremal-graph-theory",
-                     "count":  3
-                 },
-                 {
-                     "name":  "6",
-                     "count":  1
+                     "name":  "hamiltonicity",
+                     "count":  15
                  },
                  {
                      "name":  "regularity_lemma",
-                     "count":  2
+                     "count":  1
                  },
                  {
                      "name":  "dirac_type",
+                     "count":  2
+                 },
+                 {
+                     "name":  "asymptotic_enumeration",
+                     "count":  1
+                 },
+                 {
+                     "name":  "Hamilton_generated",
+                     "count":  1
+                 },
+                 {
+                     "name":  "matchings_tilings_factors",
                      "count":  3
                  },
                  {
@@ -1741,36 +1553,24 @@
                      "count":  1
                  },
                  {
-                     "name":  "hamiltonicity",
-                     "count":  16
-                 },
-                 {
-                     "name":  "embedding",
-                     "count":  6
-                 },
-                 {
-                     "name":  "resilience_perturbation",
-                     "count":  12
-                 },
-                 {
                      "name":  "extremal-combinatorics",
                      "count":  1
                  },
                  {
-                     "name":  "immersion_minor_subdivision",
+                     "name":  "sublinear_expanders",
                      "count":  1
                  },
                  {
-                     "name":  "general",
+                     "name":  "6",
                      "count":  1
                  },
                  {
-                     "name":  "C-expander",
-                     "count":  1
+                     "name":  "survey",
+                     "count":  5
                  },
                  {
-                     "name":  "chromatic_polynomial",
-                     "count":  2
+                     "name":  "graph-theory",
+                     "count":  1
                  },
                  {
                      "name":  "cycles",
@@ -1781,8 +1581,8 @@
                      "count":  1
                  },
                  {
-                     "name":  "hypergraph",
-                     "count":  1
+                     "name":  "chromatic_polynomial",
+                     "count":  2
                  },
                  {
                      "name":  "threshold",
@@ -1793,23 +1593,15 @@
                      "count":  2
                  },
                  {
-                     "name":  "spanning_trees",
-                     "count":  9
+                     "name":  "extremal_ramsey_turan",
+                     "count":  3
                  },
                  {
-                     "name":  "hypergraphs",
-                     "count":  1
+                     "name":  "spanning_trees",
+                     "count":  8
                  },
                  {
                      "name":  "homomorphism-counting",
-                     "count":  1
-                 },
-                 {
-                     "name":  "extremal_ramsey_turan",
-                     "count":  4
-                 },
-                 {
-                     "name":  "graph-theory",
                      "count":  1
                  },
                  {
@@ -1818,10 +1610,18 @@
                  },
                  {
                      "name":  "kelly_conjecture",
+                     "count":  1
+                 },
+                 {
+                     "name":  "spectral_graph_theory",
                      "count":  2
                  },
                  {
-                     "name":  "7",
+                     "name":  "色多项式",
+                     "count":  1
+                 },
+                 {
+                     "name":  "random-structures",
                      "count":  1
                  },
                  {
@@ -1829,7 +1629,7 @@
                      "count":  3
                  },
                  {
-                     "name":  "counting",
+                     "name":  "LLL",
                      "count":  1
                  },
                  {
@@ -1841,12 +1641,8 @@
                      "count":  1
                  },
                  {
-                     "name":  "random-structures",
+                     "name":  "counting",
                      "count":  1
-                 },
-                 {
-                     "name":  "sorting_network",
-                     "count":  6
                  },
                  {
                      "name":  "online_algorithm",
@@ -1854,14 +1650,14 @@
                  },
                  {
                      "name":  "spread_thresholds",
-                     "count":  8
+                     "count":  6
+                 },
+                 {
+                     "name":  "sorting_network",
+                     "count":  5
                  },
                  {
                      "name":  "Rajko_Nenadov",
-                     "count":  1
-                 },
-                 {
-                     "name":  "containers",
                      "count":  1
                  },
                  {
@@ -1869,8 +1665,8 @@
                      "count":  2
                  },
                  {
-                     "name":  "asymptotic_enumeration",
-                     "count":  1
+                     "name":  "expanders",
+                     "count":  19
                  },
                  {
                      "name":  "extendability",
@@ -1881,23 +1677,23 @@
                      "count":  1
                  },
                  {
-                     "name":  "decomposition_covering",
-                     "count":  1
+                     "name":  "routing_connectors",
+                     "count":  3
                  },
                  {
                      "name":  "unfinished",
                      "count":  1
                  },
                  {
-                     "name":  "tool",
+                     "name":  "cycle_space",
                      "count":  1
                  },
                  {
-                     "name":  "routing_connectors",
-                     "count":  4
+                     "name":  "7",
+                     "count":  1
                  },
                  {
-                     "name":  "coloring_rainbow",
+                     "name":  "size_Ramsey",
                      "count":  1
                  },
                  {
@@ -1905,20 +1701,16 @@
                      "count":  1
                  },
                  {
-                     "name":  "rainbow-turan",
-                     "count":  2
-                 },
-                 {
-                     "name":  "ai_draft",
-                     "count":  9
-                 },
-                 {
                      "name":  "regularization",
                      "count":  2
                  },
                  {
-                     "name":  "paper",
-                     "count":  1
+                     "name":  "extremal-graph-theory",
+                     "count":  3
+                 },
+                 {
+                     "name":  "ai_draft",
+                     "count":  7
                  },
                  {
                      "name":  "longest_paths",
@@ -1926,14 +1718,14 @@
                  },
                  {
                      "name":  "pseudorandom_graphs",
-                     "count":  10
+                     "count":  9
                  },
                  {
-                     "name":  "Nemanja_Draganic",
+                     "name":  "C-expander",
                      "count":  1
                  },
                  {
-                     "name":  "cycle_space",
+                     "name":  "rooted_trees",
                      "count":  1
                  },
                  {
@@ -1945,11 +1737,7 @@
                      "count":  1
                  },
                  {
-                     "name":  "rooted_trees",
-                     "count":  1
-                 },
-                 {
-                     "name":  "codegree",
+                     "name":  "disjoint_paths",
                      "count":  1
                  },
                  {
@@ -1958,10 +1746,10 @@
                  },
                  {
                      "name":  "posa_rotation",
-                     "count":  4
+                     "count":  3
                  },
                  {
-                     "name":  "disjoint_paths",
+                     "name":  "codegree",
                      "count":  1
                  },
                  {
@@ -1973,11 +1761,39 @@
                      "count":  1
                  },
                  {
-                     "name":  "4",
+                     "name":  "immersion",
+                     "count":  1
+                 },
+                 {
+                     "name":  "染色多项式",
+                     "count":  1
+                 },
+                 {
+                     "name":  "probabilistic_method",
+                     "count":  15
+                 },
+                 {
+                     "name":  "topological_minor",
+                     "count":  1
+                 },
+                 {
+                     "name":  "Kahn-Kalai",
                      "count":  1
                  },
                  {
                      "name":  "TAMS",
+                     "count":  1
+                 },
+                 {
+                     "name":  "Chvatal-Erdos",
+                     "count":  1
+                 },
+                 {
+                     "name":  "5",
+                     "count":  1
+                 },
+                 {
+                     "name":  "randomly_perturbed_graphs",
                      "count":  1
                  },
                  {
@@ -1989,60 +1805,8 @@
                      "count":  1
                  },
                  {
-                     "name":  "probabilistic_method",
-                     "count":  16
-                 },
-                 {
-                     "name":  "immersion",
-                     "count":  1
-                 },
-                 {
-                     "name":  "clique-immersion",
-                     "count":  1
-                 },
-                 {
-                     "name":  "染色多项式",
-                     "count":  1
-                 },
-                 {
-                     "name":  "expanders",
-                     "count":  20
-                 },
-                 {
-                     "name":  "matchings_tilings_factors",
-                     "count":  4
-                 },
-                 {
-                     "name":  "sublinear_expanders",
-                     "count":  1
-                 },
-                 {
-                     "name":  "Chvatal-Erdos",
-                     "count":  1
-                 },
-                 {
-                     "name":  "size_Ramsey",
-                     "count":  1
-                 },
-                 {
-                     "name":  "5",
-                     "count":  1
-                 },
-                 {
-                     "name":  "色多项式",
-                     "count":  1
-                 },
-                 {
-                     "name":  "parity_switcher",
-                     "count":  4
-                 },
-                 {
-                     "name":  "spread",
-                     "count":  1
-                 },
-                 {
-                     "name":  "Hamilton_generated",
-                     "count":  1
+                     "name":  "algorithmic_games",
+                     "count":  3
                  },
                  {
                      "name":  "graph_colouring",
@@ -2050,22 +1814,22 @@
                  },
                  {
                      "name":  "graph_theory",
-                     "count":  10
+                     "count":  9
                  },
                  {
-                     "name":  "algorithmic_games",
-                     "count":  4
-                 },
-                 {
-                     "name":  "topological_minor",
+                     "name":  "clique-immersion",
                      "count":  1
                  },
                  {
-                     "name":  "Kahn-Kalai",
+                     "name":  "rainbow-turan",
+                     "count":  2
+                 },
+                 {
+                     "name":  "4",
                      "count":  1
                  },
                  {
-                     "name":  "level_2",
+                     "name":  "Nemanja_Draganic",
                      "count":  1
                  },
                  {
@@ -2075,28 +1839,35 @@
                  {
                      "name":  "Me",
                      "count":  6
+                 },
+                 {
+                     "name":  "level_2",
+                     "count":  1
+                 },
+                 {
+                     "name":  "parity_switcher",
+                     "count":  3
+                 },
+                 {
+                     "name":  "spread",
+                     "count":  1
                  }
              ],
     "folders":  [
-                    {
-                        "name":  "ai notes/surveys",
-                        "label":  "surveys",
-                        "count":  6
-                    },
-                    {
-                        "name":  "problems",
-                        "label":  "problems",
-                        "count":  3
-                    },
                     {
                         "name":  "ai notes",
                         "label":  "ai notes",
                         "count":  18
                     },
                     {
+                        "name":  "ai notes/surveys",
+                        "label":  "surveys",
+                        "count":  6
+                    },
+                    {
                         "name":  "reference",
                         "label":  "reference",
-                        "count":  36
+                        "count":  37
                     },
                     {
                         "name":  "reference/算法",
@@ -2104,9 +1875,9 @@
                         "count":  2
                     },
                     {
-                        "name":  "附件",
-                        "label":  "附件",
-                        "count":  1
+                        "name":  "reference/概率不等式",
+                        "label":  "概率不等式",
+                        "count":  3
                     },
                     {
                         "name":  "reference/吸收方法",
@@ -2114,24 +1885,14 @@
                         "count":  3
                     },
                     {
-                        "name":  "drafts",
-                        "label":  "drafts",
+                        "name":  "problems",
+                        "label":  "problems",
                         "count":  3
-                    },
-                    {
-                        "name":  "模板",
-                        "label":  "模板",
-                        "count":  6
                     },
                     {
                         "name":  "手写 notes",
                         "label":  "手写 notes",
                         "count":  7
-                    },
-                    {
-                        "name":  "reference/概率不等式",
-                        "label":  "概率不等式",
-                        "count":  3
                     }
                 ]
 }

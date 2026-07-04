@@ -77,6 +77,10 @@ $excludedPattern = '\\(\.obsidian|\.claude|\.claudian|\.repair-backup-[^\\]+|pdf
 $allFiles = Get-ChildItem -LiteralPath $VaultPath -Recurse -File -ErrorAction SilentlyContinue |
   Where-Object { $_.FullName -notmatch $excludedPattern }
 $paperReportName = -join ([char[]](0x8BBA, 0x6587, 0x5E93, 0x5206, 0x533A, 0x62A5, 0x544A, 0x2E, 0x6D, 0x64))
+$handwrittenNotesFolder = (-join ([char[]](0x624B, 0x5199))) + " notes"
+$attachmentsFolder = -join ([char[]](0x9644, 0x4EF6))
+$attachmentReferenceNote = "proofoutline of Lemma 5 in Spread blow-up lemma with an application to perturbed random graphs.md"
+$allowedNoteFolders = @("ai notes", $handwrittenNotesFolder, "reference", "problems")
 
 $notes = @()
 $assets = @()
@@ -85,11 +89,27 @@ $skipped = @()
 foreach ($file in $allFiles) {
   $relative = Convert-ToRelativePath -BasePath $VaultPath -FullPath $file.FullName
   $relativeSite = Convert-ToSitePath $relative
+  $topFolder = ($relativeSite -split '/')[0]
+  $isAttachmentReferenceNote = ($topFolder -eq $attachmentsFolder -and $file.Name -eq $attachmentReferenceNote)
+  $isAllowedNote = $allowedNoteFolders -contains $topFolder
+  $isAttachmentAsset = ($topFolder -eq $attachmentsFolder -and $file.Extension -ine ".md")
+
   if ($file.Name -eq $paperReportName) {
     continue
   }
   if ($file.Extension -ieq ".md") {
-    $destination = Join-Path $contentPath $relative
+    if (-not ($isAllowedNote -or $isAttachmentReferenceNote)) {
+      continue
+    }
+
+    $outputRelative = $relative
+    $outputRelativeSite = $relativeSite
+    if ($isAttachmentReferenceNote) {
+      $outputRelative = Join-Path "reference" $file.Name
+      $outputRelativeSite = "reference/$($file.Name)"
+    }
+
+    $destination = Join-Path $contentPath $outputRelative
     New-Item -ItemType Directory -Path (Split-Path -Parent $destination) -Force | Out-Null
     try {
       Copy-Item -LiteralPath $file.FullName -Destination $destination -Force
@@ -98,19 +118,23 @@ foreach ($file in $allFiles) {
       $skipped += $relativeSite
       continue
     }
-    $id = $relativeSite -replace '\.md$', ''
+    $id = $outputRelativeSite -replace '\.md$', ''
     $notes += [ordered]@{
       id = $id
-      title = Get-Title -RelativePath $relative -Text $text
-      path = $relativeSite
-      url = "content/$relativeSite"
-      folder = Convert-ToSitePath ([IO.Path]::GetDirectoryName($relative))
+      title = Get-Title -RelativePath $outputRelative -Text $text
+      path = $outputRelativeSite
+      url = "content/$outputRelativeSite"
+      folder = Convert-ToSitePath ([IO.Path]::GetDirectoryName($outputRelative))
       tags = @(Get-Tags -Text $text)
       outlinks = @(Get-Outlinks -Text $text)
       excerpt = Get-Excerpt -Text $text
       updatedAt = $file.LastWriteTime.ToString("o")
     }
   } else {
+    if (-not ($isAllowedNote -or $isAttachmentAsset)) {
+      continue
+    }
+
     $destination = Join-Path $assetPath $relative
     New-Item -ItemType Directory -Path (Split-Path -Parent $destination) -Force | Out-Null
     try {
