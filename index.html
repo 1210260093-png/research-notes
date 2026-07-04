@@ -709,7 +709,7 @@
         const [target, label] = raw.split('|').map(part => part.trim());
         const href = linkForNote(target);
         if (!href) return escapeHtml(label || target);
-        return `[${label || target}](${href})`;
+        return `<a href="${escapeHtml(href)}">${escapeHtml(label || target)}</a>`;
       });
 
       text = text.replace(/(^|\s)#([A-Za-z0-9_\-/\u4e00-\u9fa5]+)/g, (match, prefix, tag) => {
@@ -751,6 +751,13 @@
           }
 
           if (inDisplayMath) {
+            index += 1;
+            body.push(lines[index]);
+            if (countDisplayDelimiters(lines[index]) % 2 === 1) inDisplayMath = !inDisplayMath;
+            continue;
+          }
+
+          if (next.trim() && !/^(#{1,6}\s|---\s*$|___\s*$|\*\*\*\s*$|>\s?\[![A-Za-z]+\])/.test(next)) {
             index += 1;
             body.push(lines[index]);
             if (countDisplayDelimiters(lines[index]) % 2 === 1) inDisplayMath = !inDisplayMath;
