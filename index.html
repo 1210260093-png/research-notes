@@ -760,7 +760,7 @@
         }
 
         const titleHtml = title ? marked.parseInline(title) : escapeHtml(type);
-        const bodyHtml = marked.parse(body.join('\n'));
+        const bodyHtml = renderMarkdownFragment(body.join('\n'));
         out.push(`<div class="callout callout-${escapeHtml(type)}"><div class="callout-title">${titleHtml}</div><div class="callout-body">${bodyHtml}</div></div>`);
       }
 
