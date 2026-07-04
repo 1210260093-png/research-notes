@@ -189,7 +189,6 @@ $folders = @(
 ) | Sort-Object -Property name
 
 $data = [ordered]@{
-  generatedAt = (Get-Date).ToString("o")
   sourceVault = $VaultPath
   notes = @($notes | Sort-Object path)
   assets = @($assets | Sort-Object path)
