@@ -792,7 +792,7 @@
 
     function renderMarkdown(markdown) {
       const parsed = frontmatter(markdown);
-      marked.setOptions({ gfm: true, breaks: true, mangle: false, headerIds: true });
+      marked.setOptions({ gfm: true, breaks: false, mangle: false, headerIds: true });
       const converted = transformObsidian(parsed.body);
       const html = renderMarkdownFragment(converted);
       const meta = parsed.meta ? `<div class="frontmatter">${escapeHtml(parsed.meta)}</div>` : '';
