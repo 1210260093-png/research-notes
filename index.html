@@ -41,6 +41,7 @@
       min-height: 100vh;
       color: var(--ink);
       background: #f8fafc;
+      overflow-x: hidden;
     }
 
     button, input {
@@ -64,7 +65,7 @@
     .shell {
       min-height: 100vh;
       display: grid;
-      grid-template-columns: 310px minmax(0, 1fr) 270px;
+      grid-template-columns: 300px minmax(0, 1fr) 300px;
     }
 
     aside, .rightbar {
@@ -254,7 +255,7 @@
 
     main {
       min-width: 0;
-      padding: 26px 34px 56px;
+      padding: 24px 38px 64px;
     }
 
     .topbar {
@@ -263,7 +264,20 @@
       gap: 14px;
       align-items: center;
       margin: 0 auto 20px;
-      max-width: 940px;
+      max-width: 900px;
+    }
+
+    .mobile-actions {
+      display: none;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .topbar-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
     }
 
     .breadcrumbs {
@@ -275,13 +289,13 @@
     }
 
     .article {
-      max-width: 940px;
+      max-width: 900px;
       margin: 0 auto;
       background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      padding: 34px 42px 46px;
+      border: 1px solid #e6ebf2;
+      border-radius: 6px;
+      box-shadow: 0 8px 22px rgba(28, 39, 58, .06);
+      padding: 36px 46px 52px;
     }
 
     .article h1 {
@@ -404,7 +418,7 @@
       border-collapse: collapse;
       width: 100%;
       margin: 16px 0;
-      table-layout: fixed;
+      table-layout: auto;
     }
 
     .article th, .article td {
@@ -412,14 +426,13 @@
       padding: 8px 10px;
       text-align: left;
       vertical-align: top;
-      overflow-wrap: anywhere;
+      overflow-wrap: break-word;
       word-break: normal;
-      min-width: 0;
     }
 
     .article th:first-child,
     .article td:first-child {
-      width: 36%;
+      width: 26%;
     }
 
     .article img {
@@ -440,6 +453,342 @@
       margin-bottom: 18px;
       font-size: 13px;
       white-space: pre-wrap;
+    }
+
+    .home-view {
+      display: grid;
+      gap: 24px;
+    }
+
+    .home-header {
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 18px;
+    }
+
+    .home-header h1 {
+      border: 0;
+      padding: 0;
+      margin: 0 0 8px;
+    }
+
+    .home-header p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .home-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .scholar-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .scholar-card {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: #1f2933;
+      border: 1px solid #d8e2ef;
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #f8fafc;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .scholar-card:hover {
+      border-color: #9bd3cc;
+      background: #eefaf8;
+    }
+
+    .scholar-card:nth-child(3n + 1) {
+      background: #f0f7ff;
+      border-color: #d5e6fb;
+    }
+
+    .scholar-card:nth-child(3n + 2) {
+      background: #f1fbf7;
+      border-color: #d8eee4;
+    }
+
+    .scholar-card:nth-child(3n) {
+      background: #fff9ed;
+      border-color: #f0dfbd;
+    }
+
+    .transfer-box {
+      display: grid;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .memo-panel,
+    .file-panel {
+      border: 1px solid #d9e2ec;
+      border-radius: 8px;
+      background: #fff;
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .transfer-panel-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .transfer-panel-title h3 {
+      margin: 0;
+      color: #164e63;
+      font-size: 17px;
+    }
+
+    .transfer-panel-title span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .memo-layout {
+      display: grid;
+      grid-template-columns: minmax(180px, .42fr) minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    .memo-list {
+      display: grid;
+      align-content: start;
+      gap: 6px;
+      max-height: 320px;
+      overflow: auto;
+      border: 1px solid #e5ebf3;
+      border-radius: 8px;
+      padding: 8px;
+      background: #f8fafc;
+    }
+
+    .memo-item {
+      text-align: left;
+      height: auto;
+      min-height: 42px;
+      padding: 8px 10px;
+      border-radius: 6px;
+      background: #fff;
+      border-color: transparent;
+    }
+
+    .memo-item.active {
+      border-color: #9bd3cc;
+      background: var(--accent-soft);
+    }
+
+    .memo-item strong {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .memo-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .memo-editor {
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .memo-title {
+      width: 100%;
+      height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 12px;
+      font: inherit;
+      font-weight: 700;
+      color: var(--ink);
+      background: #fbfcfe;
+    }
+
+    .transfer-text {
+      width: 100%;
+      min-height: 160px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      line-height: 1.55;
+      color: var(--ink);
+      background: #fbfcfe;
+    }
+
+    .transfer-text:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, .12);
+    }
+
+    .transfer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .transfer-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .transfer-subtle {
+      min-height: 32px;
+      font-size: 13px;
+      color: #475467;
+      background: #f8fafc;
+    }
+
+    .upload-button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 0 10px;
+      background: #f8fafc;
+      color: #344054;
+      cursor: pointer;
+    }
+
+    .upload-button:hover {
+      border-color: #aeb9ca;
+      background: #fff;
+    }
+
+    .upload-button input {
+      display: none;
+    }
+
+    .transfer-status {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .transfer-files {
+      display: grid;
+      gap: 7px;
+      max-height: 356px;
+      overflow: auto;
+    }
+
+    .transfer-file {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 10px 12px;
+      background: #fbfcfe;
+    }
+
+    .transfer-file strong {
+      display: block;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .transfer-file span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .transfer-file-actions {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .transfer-file-actions button {
+      min-height: 30px;
+      padding: 0 8px;
+      font-size: 13px;
+    }
+
+    .home-card {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 14px;
+      background: #fff;
+    }
+
+    .home-card:hover {
+      border-color: #9bd3cc;
+      background: #fbfefe;
+    }
+
+    .home-card strong {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .home-card span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .home-section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #164e63;
+    }
+
+    .home-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .home-note {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 10px 12px;
+      background: #fff;
+    }
+
+    .home-note:hover {
+      background: #f8fafc;
+      border-color: #aeb9ca;
+    }
+
+    .home-note small {
+      color: var(--muted);
+      flex-shrink: 0;
+      max-width: 55%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .panel {
@@ -480,6 +829,37 @@
       background: #f8fafc;
     }
 
+    .toc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .toc-link {
+      color: #344054;
+      text-decoration: none;
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 13px;
+      line-height: 1.35;
+      border: 1px solid transparent;
+    }
+
+    .toc-link:hover {
+      background: #f1f5f9;
+      border-color: var(--line);
+    }
+
+    .toc-link.level-3 {
+      margin-left: 12px;
+      color: var(--muted);
+    }
+
+    .toc-link.level-4 {
+      margin-left: 24px;
+      color: var(--muted);
+    }
+
     .missing {
       color: var(--gold);
       border-bottom: 1px dashed currentColor;
@@ -488,10 +868,14 @@
 
     .empty {
       color: var(--muted);
-      border: 1px dashed var(--line);
+      border: 1px solid #e5ebf3;
       border-radius: 7px;
       padding: 12px;
-      background: #fbfcfe;
+      background: #f8fafc;
+    }
+
+    .drawer-backdrop {
+      display: none;
     }
 
     @media (max-width: 1120px) {
@@ -504,39 +888,220 @@
       }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 980px) {
+      body.drawer-open {
+        overflow: hidden;
+      }
+
       .shell {
         display: block;
       }
 
       aside {
-        position: static;
-        height: auto;
-        min-height: auto;
-        border-width: 0 0 1px 0;
+        display: none;
+        position: fixed;
+        inset: 0 auto 0 0;
+        width: min(86vw, 360px);
+        height: 100vh;
+        min-height: 100vh;
+        z-index: 30;
+        transform: translateX(-105%);
+        transition: transform .18s ease;
+        border-width: 0 1px 0 0;
+        box-shadow: 18px 0 38px rgba(28, 39, 58, .16);
       }
 
-      .note-list {
-        max-height: 280px;
-        overflow: auto;
+      body.library-open aside {
+        display: block;
+        transform: translateX(0);
+      }
+
+      .rightbar {
+        display: none;
+        position: fixed;
+        inset: 0 0 0 auto;
+        width: min(86vw, 360px);
+        height: 100vh;
+        min-height: 100vh;
+        z-index: 30;
+        transform: translateX(105%);
+        transition: transform .18s ease;
+        border-width: 0 0 0 1px;
+        box-shadow: -18px 0 38px rgba(28, 39, 58, .16);
+      }
+
+      body.toc-open .rightbar {
+        display: block;
+        transform: translateX(0);
+      }
+
+      .drawer-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        background: rgba(15, 23, 42, .34);
+      }
+
+      body.drawer-open .drawer-backdrop {
+        display: block;
       }
 
       main {
-        padding: 16px 12px 40px;
+        padding: 0 0 34px;
       }
 
       .topbar {
-        align-items: flex-start;
-        flex-direction: column;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        max-width: none;
+        margin: 0;
+        padding: 8px 10px;
+        background: rgba(248, 250, 252, .94);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(10px);
+      }
+
+      .mobile-actions {
+        display: flex;
+      }
+
+      .mobile-actions button {
+        min-height: 34px;
+        padding: 0 10px;
+        font-size: 15px;
+      }
+
+      .breadcrumbs {
+        flex: 1;
+        min-width: 0;
+        font-size: 12px;
+      }
+
+      .topbar-controls {
+        display: none;
       }
 
       .article {
-        border-radius: 7px;
-        padding: 24px 18px 34px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 22px 18px 34px;
       }
 
       .article h1 {
-        font-size: 26px;
+        font-size: 25px;
+      }
+
+      .article h2 {
+        font-size: 21px;
+      }
+
+      .article h3 {
+        font-size: 18px;
+      }
+
+      .article p, .article li {
+        font-size: 16px;
+        line-height: 1.78;
+      }
+
+      .callout {
+        margin-left: -6px;
+        margin-right: -6px;
+        padding: 13px 14px;
+      }
+
+      .article table {
+        display: block;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        margin: 18px 0;
+      }
+
+      .article thead {
+        display: none;
+      }
+
+      .article tbody,
+      .article tr,
+      .article td {
+        display: block;
+      }
+
+      .article tr {
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: #fff;
+        margin: 0 0 12px;
+        overflow: hidden;
+      }
+
+      .article td {
+        border: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 10px 12px 12px;
+        width: auto;
+      }
+
+      .article td:last-child {
+        border-bottom: 0;
+      }
+
+      .article td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      .article td:first-child {
+        width: auto;
+        background: #f8fafc;
+      }
+
+      .home-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scholar-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .home-note {
+        display: block;
+      }
+
+      .home-note small {
+        display: block;
+        margin-top: 4px;
+        max-width: none;
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+
+      .transfer-file {
+        display: block;
+      }
+
+      .transfer-box {
+        grid-template-columns: 1fr;
+      }
+
+      .memo-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .memo-list {
+        max-height: 180px;
+      }
+
+      .transfer-file-actions {
+        margin-top: 8px;
       }
     }
 
@@ -563,7 +1128,7 @@
 </head>
 <body>
   <div class="shell">
-    <aside>
+    <aside id="libraryPanel">
       <div class="brand">
         <div class="mark">R</div>
         <div>
@@ -578,8 +1143,14 @@
 
     <main>
       <div class="topbar">
+        <div class="mobile-actions">
+          <button id="openHome" type="button" aria-label="打开主页">主页</button>
+          <button id="openLibrary" type="button" aria-label="打开笔记列表">笔记</button>
+          <button id="openToc" type="button" aria-label="打开本文目录">目录</button>
+        </div>
         <div class="breadcrumbs" id="breadcrumbs"></div>
-        <div>
+        <div class="topbar-controls">
+          <button id="homePage">主页</button>
           <button id="copyLink">复制链接</button>
           <button id="printPage">打印</button>
         </div>
@@ -589,7 +1160,11 @@
       </article>
     </main>
 
-    <section class="rightbar">
+    <section class="rightbar" id="detailPanel">
+      <div class="panel">
+        <h2>本文目录</h2>
+        <div class="toc-list" id="tocList"></div>
+      </div>
       <div class="panel">
         <h2>标签</h2>
         <div class="tag-cloud" id="tagCloud"></div>
@@ -604,6 +1179,7 @@
       </div>
     </section>
   </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
   <script>
     const state = {
@@ -615,7 +1191,8 @@
       noteByName: new Map(),
       assetByName: new Map(),
       active: null,
-      tagFilter: ''
+      tagFilter: '',
+      folderFilter: ''
     };
 
     const el = {
@@ -627,7 +1204,13 @@
       breadcrumbs: document.querySelector('#breadcrumbs'),
       tagCloud: document.querySelector('#tagCloud'),
       backlinks: document.querySelector('#backlinks'),
-      outlinks: document.querySelector('#outlinks')
+      outlinks: document.querySelector('#outlinks'),
+      tocList: document.querySelector('#tocList'),
+      openHome: document.querySelector('#openHome'),
+      homePage: document.querySelector('#homePage'),
+      openLibrary: document.querySelector('#openLibrary'),
+      openToc: document.querySelector('#openToc'),
+      drawerBackdrop: document.querySelector('#drawerBackdrop')
     };
 
     function normalizeName(value) {
@@ -667,9 +1250,17 @@
       location.hash = `/${encodeURIComponent(id)}`;
     }
 
+    function routeHome() {
+      if (location.hash) {
+        location.hash = '';
+      } else {
+        renderHome();
+      }
+    }
+
     function currentId() {
       const raw = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
-      return raw || state.notes[0]?.id || '';
+      return raw || '';
     }
 
     function frontmatter(markdown) {
@@ -807,6 +1398,398 @@
       return meta + html;
     }
 
+    const graphScholars = [
+      { name: 'Jie Han', note: 'extremal graph theory, hypergraphs, Hamiltonicity', url: 'https://jiehan773.github.io/' },
+      { name: 'Yi Zhao', note: 'extremal and probabilistic combinatorics', url: 'https://www2.gsu.edu/~matyxz/' },
+      { name: 'Tuan Tran', note: 'extremal combinatorics, random discrete structures', url: 'https://sites.google.com/view/tuantran/' },
+      { name: 'Jie Ma', note: 'graph theory and combinatorics, USTC', url: 'https://math.ustc.edu.cn/2020/0826/c18710a443078/page.htm' },
+      { name: 'Hong Liu', note: 'extremal and probabilistic combinatorics', url: 'https://www.maths.warwick.ac.uk/~hliu/' },
+      { name: 'Rajko Nenadov', note: 'random graphs, Ramsey theory, embeddings', url: 'https://sites.google.com/view/rajkon/' },
+      { name: 'Peter Keevash', note: 'combinatorics, designs, hypergraphs', url: 'https://people.maths.ox.ac.uk/keevash/' },
+      { name: 'Michael Krivelevich', note: 'random graphs and positional games', url: 'https://www.math.tau.ac.il/~krivelev/' },
+      { name: 'Noga Alon', note: 'probabilistic method, extremal combinatorics', url: 'https://www.math.princeton.edu/people/noga-alon' },
+      { name: 'Benny Sudakov', note: 'extremal and probabilistic combinatorics', url: 'https://people.math.ethz.ch/~sudakovb/' },
+      { name: 'Jacob Fox', note: 'Ramsey theory, extremal combinatorics', url: 'https://stanford.edu/~jacobfox/' },
+      { name: 'Richard Montgomery', note: 'graph theory, embeddings, Hamiltonicity', url: 'https://homepages.warwick.ac.uk/staff/R.H.Montgomery/' }
+    ];
+
+    function openTransferDb() {
+      return new Promise((resolve, reject) => {
+        const request = indexedDB.open('research-transfer-assistant', 1);
+        request.onupgradeneeded = () => {
+          const db = request.result;
+          if (!db.objectStoreNames.contains('files')) {
+            db.createObjectStore('files', { keyPath: 'id' });
+          }
+        };
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function transferStore(mode = 'readonly') {
+      const db = await openTransferDb();
+      return db.transaction('files', mode).objectStore('files');
+    }
+
+    async function listTransferFiles() {
+      const store = await transferStore();
+      return new Promise((resolve, reject) => {
+        const request = store.getAll();
+        request.onsuccess = () => resolve(request.result.sort((a, b) => b.createdAt - a.createdAt));
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function putTransferFile(file) {
+      const store = await transferStore('readwrite');
+      const record = {
+        id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+        name: file.name,
+        type: file.type || 'application/octet-stream',
+        size: file.size,
+        createdAt: Date.now(),
+        blob: file
+      };
+      return new Promise((resolve, reject) => {
+        const request = store.put(record);
+        request.onsuccess = () => resolve(record);
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function getTransferFile(id) {
+      const store = await transferStore();
+      return new Promise((resolve, reject) => {
+        const request = store.get(id);
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function deleteTransferFile(id) {
+      const store = await transferStore('readwrite');
+      return new Promise((resolve, reject) => {
+        const request = store.delete(id);
+        request.onsuccess = () => resolve();
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    function formatBytes(bytes) {
+      if (!bytes) return '0 B';
+      const units = ['B', 'KB', 'MB', 'GB'];
+      const index = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1);
+      return `${(bytes / Math.pow(1024, index)).toFixed(index ? 1 : 0)} ${units[index]}`;
+    }
+
+    function downloadBlob(blob, name) {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = name;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    async function renderTransferFiles() {
+      const list = document.querySelector('#transferFiles');
+      if (!list) return;
+      const files = await listTransferFiles();
+      list.innerHTML = files.length ? files.map(file => `<div class="transfer-file">
+        <div>
+          <strong>${escapeHtml(file.name)}</strong>
+          <span>${formatBytes(file.size)} · ${new Date(file.createdAt).toLocaleString()}</span>
+        </div>
+        <div class="transfer-file-actions">
+          <button type="button" data-download="${escapeHtml(file.id)}">下载</button>
+          <button type="button" data-delete="${escapeHtml(file.id)}">删除</button>
+        </div>
+      </div>`).join('') : '<div class="empty">还没有上传文件</div>';
+    }
+
+    function loadMemos() {
+      const raw = localStorage.getItem('research-transfer-memos');
+      let memos = raw ? JSON.parse(raw) : [];
+      const oldText = localStorage.getItem('research-transfer-text');
+      if (!memos.length && oldText) {
+        memos = [{
+          id: `memo-${Date.now()}`,
+          title: '旧版临时文字',
+          body: oldText,
+          updatedAt: Date.now()
+        }];
+        localStorage.removeItem('research-transfer-text');
+        saveMemos(memos);
+      }
+      return memos;
+    }
+
+    function saveMemos(memos) {
+      localStorage.setItem('research-transfer-memos', JSON.stringify(memos));
+    }
+
+    function activeMemoId() {
+      return localStorage.getItem('research-transfer-active-memo') || '';
+    }
+
+    function setActiveMemoId(id) {
+      localStorage.setItem('research-transfer-active-memo', id);
+    }
+
+    function currentMemo() {
+      const memos = loadMemos();
+      return memos.find(memo => memo.id === activeMemoId()) || memos[0] || null;
+    }
+
+    function renderMemoList() {
+      const list = document.querySelector('#memoList');
+      if (!list) return;
+      const memos = loadMemos().sort((a, b) => b.updatedAt - a.updatedAt);
+      const active = activeMemoId();
+      list.innerHTML = memos.length ? memos.map(memo => `<button class="memo-item${memo.id === active ? ' active' : ''}" type="button" data-memo="${escapeHtml(memo.id)}">
+        <strong>${escapeHtml(memo.title || '未命名备忘录')}</strong>
+        <span>${new Date(memo.updatedAt).toLocaleString()}</span>
+      </button>`).join('') : '<div class="empty">还没有备忘录</div>';
+    }
+
+    function loadMemoIntoEditor(memo) {
+      const title = document.querySelector('#memoTitle');
+      const text = document.querySelector('#memoText');
+      if (!title || !text) return;
+      title.value = memo?.title || '';
+      text.value = memo?.body || '';
+      if (memo) setActiveMemoId(memo.id);
+      renderMemoList();
+    }
+
+    function saveCurrentMemo() {
+      const title = document.querySelector('#memoTitle');
+      const text = document.querySelector('#memoText');
+      if (!title || !text) return null;
+      const memos = loadMemos();
+      let memo = memos.find(item => item.id === activeMemoId());
+      if (!memo) {
+        memo = { id: `memo-${Date.now()}-${Math.random().toString(16).slice(2)}`, title: '', body: '', updatedAt: Date.now() };
+        memos.push(memo);
+      }
+      memo.title = title.value.trim() || '未命名备忘录';
+      memo.body = text.value;
+      memo.updatedAt = Date.now();
+      saveMemos(memos);
+      setActiveMemoId(memo.id);
+      renderMemoList();
+      return memo;
+    }
+
+    function createMemo(title = '新备忘录', body = '') {
+      const memos = loadMemos();
+      const memo = { id: `memo-${Date.now()}-${Math.random().toString(16).slice(2)}`, title, body, updatedAt: Date.now() };
+      memos.push(memo);
+      saveMemos(memos);
+      loadMemoIntoEditor(memo);
+      return memo;
+    }
+
+    function deleteCurrentMemo() {
+      const active = activeMemoId();
+      const memos = loadMemos().filter(memo => memo.id !== active);
+      saveMemos(memos);
+      const next = memos.sort((a, b) => b.updatedAt - a.updatedAt)[0] || null;
+      if (next) {
+        setActiveMemoId(next.id);
+      } else {
+        localStorage.removeItem('research-transfer-active-memo');
+      }
+      loadMemoIntoEditor(next);
+    }
+
+    function initTransferAssistant() {
+      const title = document.querySelector('#memoTitle');
+      const text = document.querySelector('#memoText');
+      const memoList = document.querySelector('#memoList');
+      const status = document.querySelector('#transferStatus');
+      const memoUpload = document.querySelector('#memoUploadInput');
+      const fileInput = document.querySelector('#transferFileInput');
+      const files = document.querySelector('#transferFiles');
+      if (!title || !text || !memoList || !status || !memoUpload || !fileInput || !files) return;
+
+      loadMemoIntoEditor(currentMemo());
+
+      memoList.addEventListener('click', event => {
+        const id = event.target.closest('button')?.dataset.memo;
+        if (!id) return;
+        const memo = loadMemos().find(item => item.id === id);
+        loadMemoIntoEditor(memo);
+      });
+
+      document.querySelector('#newMemo')?.addEventListener('click', () => {
+        createMemo();
+        status.textContent = '已新建备忘录';
+      });
+
+      document.querySelector('#saveMemo')?.addEventListener('click', () => {
+        saveCurrentMemo();
+        status.textContent = `备忘录已保存 · ${new Date().toLocaleTimeString()}`;
+      });
+
+      text.addEventListener('input', () => {
+        saveCurrentMemo();
+        status.textContent = `备忘录已自动保存 · ${new Date().toLocaleTimeString()}`;
+      });
+
+      title.addEventListener('input', () => {
+        saveCurrentMemo();
+      });
+
+      document.querySelector('#copyMemo')?.addEventListener('click', async () => {
+        await navigator.clipboard.writeText(text.value);
+        status.textContent = '备忘录文字已复制';
+      });
+
+      document.querySelector('#downloadMemo')?.addEventListener('click', () => {
+        const memo = saveCurrentMemo();
+        const safeName = (memo?.title || 'memo').replace(/[\\/:*?"<>|]/g, '_');
+        downloadBlob(new Blob([memo?.body || ''], { type: 'text/plain;charset=utf-8' }), `${safeName}.txt`);
+        status.textContent = '备忘录已下载';
+      });
+
+      document.querySelector('#deleteMemo')?.addEventListener('click', () => {
+        deleteCurrentMemo();
+        status.textContent = '备忘录已删除';
+      });
+
+      memoUpload.addEventListener('change', async () => {
+        const selected = [...memoUpload.files];
+        for (const file of selected) {
+          const body = await file.text();
+          createMemo(file.name.replace(/\.[^.]+$/, ''), body);
+        }
+        memoUpload.value = '';
+        status.textContent = `已导入 ${selected.length} 个文本文件为备忘录`;
+      });
+
+      fileInput.addEventListener('change', async () => {
+        const selected = [...fileInput.files];
+        for (const file of selected) await putTransferFile(file);
+        fileInput.value = '';
+        status.textContent = `已保存 ${selected.length} 个文件到当前浏览器`;
+        await renderTransferFiles();
+      });
+
+      files.addEventListener('click', async event => {
+        const downloadId = event.target.closest('button')?.dataset.download;
+        const deleteId = event.target.closest('button')?.dataset.delete;
+        if (downloadId) {
+          const file = await getTransferFile(downloadId);
+          if (file) downloadBlob(file.blob, file.name);
+        }
+        if (deleteId) {
+          await deleteTransferFile(deleteId);
+          status.textContent = '文件已删除';
+          await renderTransferFiles();
+        }
+      });
+
+      renderTransferFiles().catch(error => {
+        status.textContent = `文件列表读取失败：${error.message}`;
+      });
+    }
+
+    function renderHome() {
+      state.active = null;
+      renderList();
+      renderTagCloud();
+      el.breadcrumbs.textContent = '主页';
+      document.title = 'Research Notes';
+      closeDrawers();
+
+      const recentNotes = [...state.notes]
+        .sort((a, b) => new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0))
+        .slice(0, 8);
+      const topTags = state.tags.slice(0, 28);
+
+      el.article.innerHTML = `
+        <div class="home-view">
+          <section class="home-header">
+            <h1>Research Notes</h1>
+            <p>图论与组合数学笔记、学者主页、论文线索和问题库。</p>
+          </section>
+
+          <section class="home-section">
+            <h2>文件传输助手</h2>
+            <div class="transfer-box">
+              <div class="memo-panel">
+                <div class="transfer-panel-title">
+                  <h3>备忘录</h3>
+                  <span>可编辑文字</span>
+                </div>
+                <div class="memo-layout">
+                  <div class="memo-list" id="memoList"></div>
+                  <div class="memo-editor">
+                    <input class="memo-title" id="memoTitle" type="text" placeholder="备忘录标题">
+                    <textarea class="transfer-text" id="memoText" placeholder="临时记录文字、链接、待办、证明草稿……"></textarea>
+                  </div>
+                </div>
+                <div class="transfer-actions">
+                  <button class="transfer-primary" id="newMemo" type="button">新建</button>
+                  <button id="saveMemo" type="button">保存</button>
+                  <button class="transfer-subtle" id="copyMemo" type="button">复制</button>
+                  <button class="transfer-subtle" id="downloadMemo" type="button">下载</button>
+                  <button class="transfer-subtle" id="deleteMemo" type="button">删除</button>
+                </div>
+                <div class="transfer-actions">
+                  <label class="upload-button">导入文本<input id="memoUploadInput" type="file" accept=".txt,.md,.tex,.csv,.json,text/*" multiple></label>
+                </div>
+              </div>
+
+              <div class="file-panel">
+                <div class="transfer-panel-title">
+                  <h3>文件</h3>
+                  <span>本地保存</span>
+                </div>
+                <div class="transfer-actions">
+                  <label class="upload-button">上传附件<input id="transferFileInput" type="file" multiple></label>
+                </div>
+                <div class="transfer-files" id="transferFiles"></div>
+              </div>
+            </div>
+            <div class="transfer-status" id="transferStatus">内容保存在当前浏览器本地。</div>
+          </section>
+
+          <section class="home-section">
+            <h2>图论学者主页</h2>
+            <div class="scholar-grid">
+              ${graphScholars.map(scholar => `<a class="scholar-card" href="${escapeHtml(scholar.url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(scholar.note)}">${escapeHtml(scholar.name)}</a>`).join('')}
+            </div>
+          </section>
+
+          <section class="home-section">
+            <h2>最近更新</h2>
+            <div class="home-list">
+              ${recentNotes.map(note => `<a class="home-note" href="#/${encodeURIComponent(note.id)}">
+                <span>${escapeHtml(note.title)}</span>
+                <small>${escapeHtml(note.path)}</small>
+              </a>`).join('')}
+            </div>
+          </section>
+
+          <section class="home-section">
+            <h2>常用标签</h2>
+            <div class="tag-cloud">
+              ${topTags.map(tag => `<a class="pill" href="#tag:${encodeURIComponent(tag.name)}">#${escapeHtml(tag.name)} ${tag.count}</a>`).join('')}
+            </div>
+          </section>
+        </div>
+      `;
+      renderToc();
+      initTransferAssistant();
+      el.backlinks.innerHTML = '<div class="empty">打开一篇笔记后显示反向链接</div>';
+      el.outlinks.innerHTML = '<div class="empty">打开一篇笔记后显示相关链接</div>';
+    }
+
     async function loadNote(id) {
       const note = state.noteById.get(id) || state.notes[0];
       if (!note) return;
@@ -819,10 +1802,36 @@
       const markdown = await response.text();
       el.article.innerHTML = renderMarkdown(markdown);
       document.title = `${note.title} · Research Notes`;
+      enhanceTables();
+      renderToc();
+      closeDrawers();
       if (window.MathJax?.typesetPromise) {
         MathJax.typesetClear([el.article]);
         MathJax.typesetPromise([el.article]);
       }
+    }
+
+    function enhanceTables() {
+      el.article.querySelectorAll('table').forEach(table => {
+        const headers = [...table.querySelectorAll('thead th')].map(th => th.textContent.trim());
+        table.querySelectorAll('tbody tr').forEach(row => {
+          [...row.children].forEach((cell, index) => {
+            cell.dataset.label = headers[index] || `第 ${index + 1} 列`;
+          });
+        });
+      });
+    }
+
+    function renderToc() {
+      const headings = [...el.article.querySelectorAll('h1, h2, h3')];
+      headings.forEach((heading, index) => {
+        if (!heading.id) heading.id = `section-${index + 1}-${slugify(heading.textContent)}`;
+      });
+
+      el.tocList.innerHTML = headings.length ? headings.map(heading => {
+        const level = Number(heading.tagName.slice(1));
+        return `<a class="toc-link level-${level}" href="" data-target="${escapeHtml(heading.id)}">${escapeHtml(heading.textContent)}</a>`;
+      }).join('') : '<div class="empty">这篇笔记没有小标题</div>';
     }
 
     function renderList() {
@@ -830,6 +1839,8 @@
       const notes = state.notes.filter(note => {
         const tagOk = !state.tagFilter || note.tags.includes(state.tagFilter);
         if (!tagOk) return false;
+        const folderOk = !state.folderFilter || note.path.split('/')[0] === state.folderFilter;
+        if (!folderOk) return false;
         if (!keyword) return true;
         const haystack = `${note.title} ${note.path} ${note.tags.join(' ')} ${note.excerpt}`.toLowerCase();
         return haystack.includes(keyword);
@@ -918,12 +1929,22 @@
     }
 
     function renderStats(data) {
-      el.generatedAt.textContent = `更新于 ${new Date(data.generatedAt).toLocaleString()}`;
+      el.generatedAt.textContent = 'Obsidian research vault';
       el.stats.innerHTML = `
         <span class="pill">${data.notes.length} 篇笔记</span>
         <span class="pill">${data.assets.length} 个附件</span>
         <span class="pill">${data.tags.length} 个标签</span>
       `;
+    }
+
+    function openDrawer(name) {
+      document.body.classList.toggle('library-open', name === 'library');
+      document.body.classList.toggle('toc-open', name === 'toc');
+      document.body.classList.add('drawer-open');
+    }
+
+    function closeDrawers() {
+      document.body.classList.remove('library-open', 'toc-open', 'drawer-open');
     }
 
     async function init() {
@@ -951,17 +1972,54 @@
 
     function handleRoute() {
       const hash = location.hash;
+      if (!hash || hash === '#') {
+        state.tagFilter = '';
+        state.folderFilter = '';
+        renderHome();
+        return;
+      }
       if (hash.startsWith('#tag:')) {
         state.tagFilter = decodeURIComponent(hash.slice(5));
+        state.folderFilter = '';
+        renderHome();
         renderList();
-        renderSidebars();
+        openDrawer('library');
+        el.breadcrumbs.textContent = `标签 / ${state.tagFilter}`;
+        return;
+      }
+      if (hash.startsWith('#folder:')) {
+        state.folderFilter = decodeURIComponent(hash.slice(8));
+        state.tagFilter = '';
+        renderHome();
+        renderList();
+        openDrawer('library');
+        el.breadcrumbs.textContent = `分类 / ${state.folderFilter}`;
         return;
       }
       state.tagFilter = '';
+      state.folderFilter = '';
       loadNote(currentId());
     }
 
     el.search.addEventListener('input', renderList);
+    el.noteList.addEventListener('click', event => {
+      if (event.target.closest('a')) closeDrawers();
+    });
+    el.tocList.addEventListener('click', event => {
+      const link = event.target.closest('a');
+      if (!link) return;
+      event.preventDefault();
+      document.getElementById(link.dataset.target)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      closeDrawers();
+    });
+    el.openLibrary.addEventListener('click', () => openDrawer('library'));
+    el.openToc.addEventListener('click', () => openDrawer('toc'));
+    el.openHome.addEventListener('click', routeHome);
+    el.homePage.addEventListener('click', routeHome);
+    el.drawerBackdrop.addEventListener('click', closeDrawers);
+    window.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeDrawers();
+    });
     window.addEventListener('hashchange', handleRoute);
     document.querySelector('#printPage').addEventListener('click', () => window.print());
     document.querySelector('#copyLink').addEventListener('click', async () => {

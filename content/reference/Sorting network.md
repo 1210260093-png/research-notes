@@ -7,7 +7,7 @@ category: concepts
 
 排序网络（sorting network）是一种**固定的比较交换网络**，用来对输入序列进行排序。所谓“固定”，是指网络中比较器的连接方式以及它们的执行顺序在一开始就已经确定下来，**不依赖于具体输入的数值**。  
   
-在本文的记号下，一个并行排序网络写成 $(R,C)$)，其中：  
+在本文的记号下，一个并行排序网络写成 $(R,C)$，其中：  
   
 - $R$ 是寄存器（registers）的集合。输入序列的各个元素分别存放在这些寄存器中。  
 - $C$ 是比较器（comparators）的集合。每个比较器作用于两个寄存器，对其中的两个值进行比较，并把较小者放在前面、较大者放在后面；也就是说，当两个寄存器中的值顺序不对时，就交换它们。  
@@ -39,5 +39,4 @@ $$
 
 - [[Reserved connector theorem]] — 用 sorting network 作为蓝图构造 linking structure，深度 $O(\log n)$ 的排序网络恰好给出理想的路径长度
 - 参见论文：[[Ajtai-Komlos-Szemeredi-1983-Sorting-network.pdf]]
-
 
